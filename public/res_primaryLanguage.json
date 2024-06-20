@@ -1,6 +1,6 @@
 {
     "basic_info": {
-      "description": "Hi, I'm Kaleb. I have spent the last 4 years building data architecture, from storage and infra right the way through to visualisation and data-driven decision making.\nI've worked with private and public sector organisations, each with different needs and tools. Most recently, my work with the Ministry of Justice involved massive data migration from critical but outsourced systems, to an in-house and accessible AWS environment.\nIn the past I have worked on machine learning approaches to pattern detection in anti-money laundering investigations within the banking sector. And before that, I worked on a rapidly scaling payments system for Deliveroo. \nAlongside my contracting work I am building a company, Burst. Check us out here.",
+      "description": "Hi, I'm Kaleb. I have spent the last 4 years building data architecture, from storage and infra right the way through to visualisation and data-driven decision making.\nI've worked with private and public sector organisations, each with different needs and tools. Most recently, my work with the Ministry of Justice involved massive data migration from critical outsourced systems, to an in-house and accessible AWS environment.\nIn the past I have worked on machine learning approaches to pattern detection in anti-money laundering investigations within the banking sector. And before that, I worked on a rapidly scaling payments system for Deliveroo. \nAlongside my contracting work I am building a company, Burst. Check us out here.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -81,7 +81,7 @@
     "experience": [
       {
         "company": "UK Ministry of Justice (via MadeTech)",
-        "title": "Senior Engineer",
+        "title": "Senior Data Engineer",
         "years": "07.2023 - 04.2024",
         "mainTech": [
           "Python",
@@ -101,7 +101,7 @@
       },
       {
         "company": "UK DVLA (via MadeTech)",
-        "title": "Senior Data Engineer",
+        "title": "Senior Engineer",
         "years": "03.2022 - 06.2023",
         "mainTech": [
           "Python",

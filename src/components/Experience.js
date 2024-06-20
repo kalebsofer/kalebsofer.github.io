@@ -59,13 +59,6 @@ class Experience extends Component {
               {work.company}
             </h4>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
-                {i === 2 && (
-                    <div style={{ textAlign: "left", marginTop: "15px" }}>
-                        <p>This is some additional text for the third element.</p>
-                        <Badge pill className="experience-badge mr-2 mb-2">Additional Badge 1</Badge>
-                        <Badge pill className="experience-badge mr-2 mb-2">Additional Badge 2</Badge>
-                    </div>
-                )}
           </VerticalTimelineElement>
         );
       });
