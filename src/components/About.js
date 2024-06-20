@@ -13,6 +13,15 @@ class About extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
       var about = this.props.resumeBasicInfo.description;
+    } else {
+      var sectionName = '';
+      var hello = '';
+      var about = '';
+
+      about = about.replace(
+        "Check us out here",
+        '<a href="https://burst.org" target="_blank" rel="noopener noreferrer">Check us out here.</a>'
+      );
     }
 
     return (
@@ -23,24 +32,18 @@ class About extends Component {
           </h1>
           <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
-              <div className="polaroid">
+              <div
+                className="circular-profile">
                 <span style={{ cursor: "auto" }}>
                   <img
-                    height="250px"
+                    width="300px"
+                    height="300px"
                     src={profilepic}
                     alt="Avatar placeholder"
-                  />
-                  <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                    style={{
+                      objectFit: "cover",
+                      borderRadius: "50%",
+                    }}
                   />
                 </span>
               </div>
@@ -72,15 +75,15 @@ class About extends Component {
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
                       height: "auto",
-                      fontSize: "132%",
+                      fontSize: "150%",
                       lineHeight: "200%",
                     }}
                   >
-                    <br />
-                    <span className="wave">{hello} :) </span>
-                    <br />
-                    <br />
-                    {about}
+                    {about.split('\n').map((item, index) => (
+                      <p key={index}>
+                        {item}
+                      </p>
+                    ))}
                   </div>
                 </div>
               </div>

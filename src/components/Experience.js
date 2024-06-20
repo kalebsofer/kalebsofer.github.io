@@ -37,8 +37,9 @@ class Experience extends Component {
                 iconStyle={{ background: '#fff', color: '#000', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                 icon={
                     i === 0 ? <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/mojlogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} /> :
-                        i === 1 ? <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/santanderlogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} /> :
-                            <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/delilogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} />
+                    i === 1 ? <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/mojlogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} /> :
+                      i === 2 ? <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/santanderlogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} /> :
+                        <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/delilogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} />
                 }
             key={i}
           >

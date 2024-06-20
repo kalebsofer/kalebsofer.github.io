@@ -72,6 +72,13 @@ header {
 	border-radius: 8px;
 }
 
+.category-title {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	color: #ffffff;
+}
 .language {
 	font-size: 25px;
 	background-color: #e9d5a1;
@@ -121,6 +128,21 @@ header h1 {
 	text-align: center;
 }
 
+.circular-profile {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	/* Center the container horizontally */
+	border: 5px solid #fff;
+	/* Optional: Add a white border around the image */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* Optional: Add a subtle shadow */
+}
 .foto img {
 	display: block;
 	width: 100%;

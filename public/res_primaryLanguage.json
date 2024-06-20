@@ -1,11 +1,10 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Kaleb Sofer blah blah",
+      "description": "Hi, I'm Kaleb. I have spent the last 4 years building data architecture, from storage and infra right the way through to visualisation and data-driven decision making.\nI've worked with private and public sector organisations, each with different needs and tools. Most recently, my work with the Ministry of Justice involved massive data migration from critical but outsourced systems, to an in-house and accessible AWS environment.\nIn the past I have worked on machine learning approaches to pattern detection in anti-money laundering investigations within the banking sector. And before that, I worked on a rapidly scaling payments system for Deliveroo. \nAlongside my contracting work I am building a company, Burst. Check us out here.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
-        "skills": "Skills",
+        "skills": "Stack",
         "experience": "Experience"
       }
     },
@@ -81,56 +80,71 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "UK Ministry of Justice (via MadeTech)",
+        "title": "Senior Engineer",
+        "years": "07.2023 - 04.2024",
         "mainTech": [
-          "Angular 8/9/10"
+          "Python",
+          "Spark",
+          "AWS"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "PySpark",
+          "Airflow",
+          "Kafka",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "Confluence",
+          "Jira"
         ]
       },
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "UK DVLA (via MadeTech)",
+        "title": "Senior Data Engineer",
+        "years": "03.2022 - 06.2023",
         "mainTech": [
-          "Angular 8/9/10"
+          "Python",
+          "Azure"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "Databricks",
+          "SQL",
+          "Airflow",
+          "Docker",
+          "Terraform"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "company": "Santander (via Kubrick)",
+        "title": "Data Scientist",
+        "years": "08.2020 - 11.2021",
         "mainTech": [
-          "Angular 7/8"
+          "Python"
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "PySpark",
+          "Pandas",
+          "Numpy",
+          "Scikit-learn",
+          "Spacy",
+          "Plotly",
+          "Hadhoop",
+          "Hue"
+        ]
+      },
+      {
+        "company": "Deliveroo (via Kubrick)",
+        "title": "Data Engineer",
+        "years": "06.2019 - 06.2020",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "SQL",
+          "Docker",
+          "AWS S3",
+          "Snowflake"
         ]
       }
     ]

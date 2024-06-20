@@ -18,54 +18,111 @@
         "class": "fab fa-instagram"
       }
     ],
-    "image": "myProfile.jpg"
+    "image": "myProfile.png"
   },
   "skills": {
     "icons": [
       {
-        "name": "HTML 5",
-        "class": "devicon-html5-plain",
-        "level": "95"
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "90",
+        "category": "Data Engineering"
       },
       {
-        "name": "CSS 3",
-        "class": "devicon-css3-plain",
-        "level": "95"
+        "name": "SQL",
+        "class": "devicon-azuresqldatabase-plain",
+        "level": "90",
+        "category": "Data Engineering"
       },
       {
-        "name": "Angular",
-        "class": "devicon-angularjs-plain",
-        "level": "80"
+        "name": "Spark",
+        "class": "devicon-apachespark-original",
+        "level": "90",
+        "category": "Data Engineering"
       },
       {
-        "name": "TypeScript",
-        "class": "devicon-typescript-plain",
-        "level": "90"
+        "name": "Airflow",
+        "class": "devicon-apacheairflow-plain",
+        "level": "90",
+        "category": "Data Engineering"
       },
       {
-        "name": "JavaScript",
-        "class": "devicon-javascript-plain",
-        "level": "70"
+        "name": "Kafka",
+        "class": "devicon-apachekafka-plain",
+        "level": "90",
+        "category": "Cloud and Infra"
       },
       {
-        "name": "Sass",
-        "class": "devicon-sass-original",
-        "level": "75"
+        "name": "Docker",
+        "class": "devicon-docker-plain",
+        "level": "90",
+        "category": "Data Engineering"
       },
       {
-        "name": "Bootstrap",
-        "class": "devicon-bootstrap-plain",
-        "level": "85"
+        "name": "Kubernetes",
+        "class": "devicon-kubernetes-plain",
+        "level": "90",
+        "category": "Data Engineering"
       },
       {
-        "name": "C#",
-        "class": "devicon-csharp-plain",
-        "level": "65"
+        "name": "PyTorch",
+        "class": "devicon-pytorch-original",
+        "level": "90",
+        "category": "Machine Learning"
       },
       {
-        "name": "MySql",
-        "class": "devicon-mysql-plain",
-        "level": "60"
+        "name": "scikit-learn",
+        "class": "devicon-scikitlearn-plain",
+        "level": "90",
+        "category": "Machine Learning"
+      },
+      {
+        "name": "GCP",
+        "class": "devicon-googlecloud-plain",
+        "level": "90",
+        "category": "Cloud and Infra"
+      },
+      {
+        "name": "AWS",
+        "class": "devicon-amazonwebservices-plain",
+        "level": "90",
+        "category": "Cloud and Infra"
+      },
+      {
+        "name": "Terraform",
+        "class": "devicon-terraform-plain",
+        "level": "90",
+        "category": "Cloud and Infra"
+      },
+      {
+        "name": "matplotlib",
+        "class": "devicon-matplotlib-plain",
+        "level": "90",
+        "category": "Data Visualization"
+      },
+      {
+        "name": "Plotly",
+        "class": "devicon-plotly-plain",
+        "level": "90",
+        "category": "Data Visualization"
+      },
+      {
+        "name": "Jira",
+        "class": "devicon-jira-plain",
+        "level": "90",
+        "category": "Project Management"
+      },
+      {
+        "name": "Confluence",
+        "class": "devicon-confluence-plain",
+        "level": "90",
+        "category": "Project Management"
+      },
+      {
+        "name": "Trello",
+        "class": "devicon-trello-plain",
+        "level": "90",
+        "category": "Project Management"
       }
     ]
   }
