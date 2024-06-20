@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
+      "description": "👋 jajaja. ",
       "section_name": {
         "about": "O mnie",
         "projects": "Projekty",
@@ -80,6 +80,23 @@
       }
     ],
     "experience": [
+      {
+        "company": "DefOpenSource",
+        "title": "Front-End Developer",
+        "years": "10.2019 - obecnie",
+        "mainTech": [
+          "Angular 8/9/10"
+        ],
+        "technologies": [
+          "REST API",
+          "RxJS",
+          "JavaScript",
+          "Bootstrap",
+          "MDBootstrap",
+          "EF Core",
+          "Angular Material"
+        ]
+      },
       {
         "company": "DefOpenSource",
         "title": "Front-End Developer",

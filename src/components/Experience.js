@@ -31,19 +31,20 @@ class Experience extends Component {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+                contentStyle={{ background: '#fff', color: '#000' }}
+                contentArrowStyle={{ borderRight: '7px solid #fff' }}
             date={work.years}
-            iconStyle={{
-              background: "#AE944F",
-              color: "#fff",
-              textAlign: "center",
-            }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+                iconStyle={{ background: '#fff', color: '#000', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                icon={
+                    i === 0 ? <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/mojlogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} /> :
+                        i === 1 ? <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/santanderlogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} /> :
+                            <img src={process.env.PUBLIC_URL + '/images/portfolio/experience/delilogo.png'} alt="icon" style={{ width: '50%', height: '50%', objectFit: 'cover', borderRadius: '50%' }} />
+                }
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
               {mainTech}
-            </div>
-
+                </div>
             <h3
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
@@ -57,6 +58,13 @@ class Experience extends Component {
               {work.company}
             </h4>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+                {i === 2 && (
+                    <div style={{ textAlign: "left", marginTop: "15px" }}>
+                        <p>This is some additional text for the third element.</p>
+                        <Badge pill className="experience-badge mr-2 mb-2">Additional Badge 1</Badge>
+                        <Badge pill className="experience-badge mr-2 mb-2">Additional Badge 2</Badge>
+                    </div>
+                )}
           </VerticalTimelineElement>
         );
       });
@@ -74,19 +82,20 @@ class Experience extends Component {
           </div>
         </div>
         <div className="col-md-8 mx-auto">
-          <VerticalTimeline>
+                <VerticalTimeline>
             {work}
             <VerticalTimelineElement
-              iconStyle={{
-                background: "#AE944F",
-                color: "#fff",
-                textAlign: "center",
-              }}
-              icon={
-                <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
-              }
+                        iconStyle={{
+                            background: 'rgb(16, 204, 82)',
+                            color: '#fff',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
+                        icon={<i className="fas fa-sun experience-icon" style={{ fontSize: '34px', marginTop: '2px' }}></i>}
             />
-          </VerticalTimeline>
+                </VerticalTimeline>
+
         </div>
       </section>
     );

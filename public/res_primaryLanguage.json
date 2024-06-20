@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description": "👋 I'm Kaleb Sofer blah blah",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -80,6 +80,25 @@
       }
     ],
     "experience": [
+      {
+        "company": "DefOpenSource",
+        "title": "Front-End Developer",
+        "years": "10.2019 - present",
+        "mainTech": [
+          "Angular 8/9/10"
+        ],
+        "technologies": [
+          "REST API",
+          "RxJS",
+          "JavaScript",
+          "Bootstrap",
+          "MDBootstrap",
+          "EF Core",
+          ".NET Core",
+          "SignalR",
+          "Angular Material"
+        ]
+      },
       {
         "company": "DefOpenSource",
         "title": "Front-End Developer",
