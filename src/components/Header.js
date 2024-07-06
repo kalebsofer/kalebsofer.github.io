@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import { slide as Menu } from "react-burger-menu";
+import '../App.scss';
 
 class Header extends Component {
   titles = [];
 
   constructor() {
     super();
-    this.state = { checked: false };
+    this.state = { checked: false, menuOpen: false };
     this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
+    this.handleStateChange = this.handleStateChange.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   onThemeSwitchChange(checked) {
@@ -22,6 +26,14 @@ class Header extends Component {
     var newTheme =
       body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
+  }
+
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen });
+  }
+
+  toggleMenu() {
+    this.setState(state => ({ menuOpen: !state.menuOpen }));
   }
 
   render() {
@@ -87,6 +99,36 @@ class Header extends Component {
                 }
                 id="icon-switch"
               />
+              <Menu
+                right
+                isOpen={this.state.menuOpen}
+                onStateChange={(state) => this.handleStateChange(state)}
+                customBurgerIcon={false}
+                customCrossIcon={false}
+              // width={'300px'}
+              // styles={{
+              //   bmMenuWrap: {
+              //     top: '0px',
+              //     height: 'auto' // Adjusts height based on content
+              //   },
+              //   bmOverlay: {
+              //     top: 0,
+              //     left: 0,
+              //     right: 0,
+              //     bottom: 0,
+              //     position: 'fixed'
+              //   }
+              // }}
+              >
+                <a className="menu-item" href="#about">About Me</a>
+                <a className="menu-item" href="#skills">Stack</a>
+                <a className="menu-item" href="#experience">Experience</a>
+                <a className="menu-item" href="#projects">Projects</a>
+                <a className="menu-item" href="/docs/KSoferCV.pdf" download>CV</a>
+              </Menu>
+              <div className={`burger-button ${this.state.menuOpen ? 'open' : ''}`} onClick={this.toggleMenu} style={{ transform: this.state.menuOpen ? 'translateX(-300px)' : 'translateX(0)' }}>
+                <span className="iconify" data-icon="mdi:menu" data-inline="false"></span>
+              </div>
             </div>
           </div>
         </div>

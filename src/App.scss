@@ -1,8 +1,19 @@
 @import '../src/scss/themes/theme-dark.scss';
 @import '../src/scss/themes/theme-light.scss';
-// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+/* Base styles */
+body,
+html {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 html {
 	font-size: 62.5%;
 	-webkit-font-smoothing: antialiased;
@@ -30,24 +41,119 @@ html {
 	width: 150px;
 }
 
+/* Header styles */
 header {
 	position: relative;
 	height: 520px;
 	min-height: 450px;
 	width: 100%;
+	background-color: #e9d5a1;
 	background-size: cover;
-	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	padding-top: 150px;
 	padding-bottom: 0;
 }
 
+.header-container {
+	height: calc(100vh - 140px);
+	display: flex;
+	align-items: center;
+}
+
+.header-icon {
+	font-size: 4rem;
+}
+
+.title-styles {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.react-switch {
+	margin-top: 1rem;
+}
+
+.burger-button {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 72px;
+	height: 60px;
+	z-index: 1000;
+	cursor: pointer;
+	transition: transform 0.5s; // Smooth transition
+}
+
+.burger-button .iconify {
+	font-size: 4em; // Increased size for the icon
+	color: #373a47;
+}
+
+.burger-button.open .iconify {
+	color: #a90000;
+}
+
+.bm-burger-bars {
+	background: #373a47;
+}
+
+.bm-burger-bars-hover {
+	background: #a90000;
+}
+
+.bm-menu {
+	background: #373a47;
+	padding: 2.5em 1.5em 0;
+	font-size: 1.5em;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.bm-morph-shape {
+	fill: #373a47;
+}
+
+.bm-menu-wrap {
+	top: 0px; // start the menu from the top of the page
+	height: 50%; // Ensure the menu covers the full height based on content
+	right: 0;
+}
+
+.bm-item-list {
+	height: 50%; // Ensure the item list covers the full height
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start; // Align the menu items at the top
+}
+
+.bm-item {
+	display: block;
+	text-decoration: none;
+	color: #d1d1d1;
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+
+.bm-item:hover {
+	color: white;
+}
+
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+	// top: 0; // Ensure overlay covers from the top
+	// left: 300px; // Ensure overlay covers from the left
+	// right: 300px; // Make sure it starts where the menu ends
+	// bottom: 0; // Ensure overlay covers to the bottom
+	position: auto;
+}
 .language-icon {
 	font-size: 50px;
 	cursor: pointer;

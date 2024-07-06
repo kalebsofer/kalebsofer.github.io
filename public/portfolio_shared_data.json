@@ -50,7 +50,7 @@
         "name": "Kafka",
         "class": "devicon-apachekafka-plain",
         "level": "90",
-        "category": "Cloud and Infra"
+        "category": "Data Engineering"
       },
       {
         "name": "Docker",
