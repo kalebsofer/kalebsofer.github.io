@@ -1,83 +1,18 @@
 {
     "basic_info": {
-      "description": "Hi, I'm Kaleb. I design and build data infrastructure, from storage and pipelines to visualizations and data-driven decision making.\nMy experience spans both private and public sectors, each presenting unique challenges and tools. Recently, I collaborated with the Ministry of Justice on a large-scale data migration, transitioning critical outsourced systems to an in-house, accessible AWS environment.\nPreviously, I developed machine learning techniques for pattern detection in anti-money laundering investigations within the banking sector. Prior to that, I worked on the rapid scaling of a payments system for Deliveroo.\n In addition to my contracting work, I'm building a company called Burst. Learn more about us here.",
+      "description_parts": [
+        "I specialize in designing and developing comprehensive data systems. My expertise spans from provisioning infrastructure and optimizing data pipelines to building and training machine learning models and creating user interfaces that facilitate data-driven decision making.",
+        "I have extensive experience in both the private and public sectors, each presenting unique challenges. Recently, I collaborated with the Ministry of Justice on a large-scale data migration, transitioning critical outsourced systems to an in-house, accessible AWS environment.",
+        "Previously, I developed machine learning techniques for pattern detection in anti-money laundering investigations within the banking sector. Prior to that, I worked on the rapid scaling of a payments system for Deliveroo.",
+        "In addition to my contracting work, I'm building a company called Burst. Learn more about us here."
+      ],
       "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Stack",
-        "experience": "Experience"
+        "about": "about me",
+        "skills": "stack",
+        "experience": "experience",
+        "projects": "projects"
       }
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
     "experience": [
       {
         "company": "UK Ministry of Justice (via MadeTech)",
@@ -145,6 +80,76 @@
           "Docker",
           "AWS S3",
           "Snowflake"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Animal Shelter",
+        "startDate": "2020",
+        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Photography",
+        "startDate": "2018",
+        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "3D Object Viewer",
+        "startDate": "2015",
+        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
         ]
       }
     ]

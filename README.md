@@ -43,7 +43,6 @@ Check live demonstration <a href="https://dorota1997.github.io/react-frontend-de
 4. `npm start` project and customize it.
 5. Deploy on github-pages using `npm run deploy` command.
 
-Testing local changes
 
 <pre>
 ⚠️ Note that:

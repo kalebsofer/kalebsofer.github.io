@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 /* Base styles */
-body,
 html {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -41,7 +40,6 @@ html {
 	width: 150px;
 }
 
-/* Header styles */
 header {
 	position: relative;
 	height: 520px;
@@ -82,11 +80,11 @@ header {
 	height: 60px;
 	z-index: 1000;
 	cursor: pointer;
-	transition: transform 0.5s; // Smooth transition
+	transition: transform 0.3s;
 }
 
 .burger-button .iconify {
-	font-size: 4em; // Increased size for the icon
+	font-size: 4em;
 	color: #373a47;
 }
 
@@ -104,7 +102,7 @@ header {
 
 .bm-menu {
 	background: #373a47;
-	padding: 2.5em 1.5em 0;
+	padding: 1.5em 4.5em 0;
 	font-size: 1.5em;
 	overflow: hidden;
 	display: flex;
@@ -122,20 +120,24 @@ header {
 }
 
 .bm-menu-wrap {
-	top: 0px; // start the menu from the top of the page
-	height: 50%; // Ensure the menu covers the full height based on content
+	top: 0px;
+		height: 50%;
 	right: 0;
 }
 
 .bm-item-list {
-	height: 50%; // Ensure the item list covers the full height
+	height: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start; // Align the menu items at the top
+	justify-content: flex-start;
+		align-items: center;
 }
 
 .bm-item {
 	display: block;
+	text-align: center;
+		padding: 0%;
+		width: 100%;
 	text-decoration: none;
 	color: #d1d1d1;
 	margin-bottom: 10px;
@@ -148,10 +150,6 @@ header {
 
 .bm-overlay {
 	background: rgba(0, 0, 0, 0.3);
-	// top: 0; // Ensure overlay covers from the top
-	// left: 300px; // Ensure overlay covers from the left
-	// right: 300px; // Make sure it starts where the menu ends
-	// bottom: 0; // Ensure overlay covers to the bottom
 	position: auto;
 }
 .language-icon {
@@ -162,7 +160,7 @@ header {
 .project-date {
 	font-size: 16px;
 	// font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	padding: 8px 15px 2px 15px;
 	position: relative;
 	z-index: -500;
@@ -224,19 +222,57 @@ header h1 {
 }
 
 #about {
-	background: #fff;
+	height: 60vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
 	overflow: hidden;
 }
 
 #about h1 {
-	padding-top: 5%;
-	font: 18px/24px 'opensans-bold', sans-serif;
+	padding-top: 2%;
+		padding-bottom: 2%;
+		font: 18px / 24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: black;
 	text-align: center;
 }
 
+#about p {
+	opacity: 0;
+	transform: translateY(100px); // Slightly moved down initially
+	transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#about p.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.about-section {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.about-heading {
+	color: black;
+}
+
+.circular-profile .profile-image {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.about-description {
+	font-size: 150%;
+	line-height: 200%;
+	opacity: 0; // Initially hidden
+	transition: opacity 1s ease-in;
+}
 .circular-profile {
 	border-radius: 50%;
 	overflow: hidden;
@@ -246,11 +282,8 @@ header h1 {
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	/* Center the container horizontally */
 	border: 5px solid #fff;
-	/* Optional: Add a white border around the image */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	/* Optional: Add a subtle shadow */
 }
 .foto img {
 	display: block;
