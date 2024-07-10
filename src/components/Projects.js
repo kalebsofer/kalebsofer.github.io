@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 class Projects extends Component {
   render() {
@@ -7,18 +8,17 @@ class Projects extends Component {
       var projects = this.props.resumeProjects.map(function (project) {
         return (
           <div
-            className="col-sm-12 col-md-6 col-lg-4"
+            className="portfolio-item"
             key={project.title}
             style={{ cursor: "pointer" }}
           >
-            <span className="portfolio-item d-block">
+            <span className="d-block">
               <a href={project.url} target="_blank" rel="noopener noreferrer" className="foto">
                 <div>
                   <img
                     src={project.images[0]}
                     alt="projectImages"
-                    height="230"
-                    style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }}
+                    className="portfolio-img"
                   />
                   <span className="project-date">{project.startDate}</span>
                   <br />
@@ -40,7 +40,13 @@ class Projects extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="col-md-12 mx-auto">
-            <div className="row mx-auto">{projects}</div>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+            >
+              <Masonry gutter="15px">
+                {projects}
+              </Masonry>
+            </ResponsiveMasonry>
           </div>
         </div>
       </section>
