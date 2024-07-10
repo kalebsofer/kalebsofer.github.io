@@ -1,4 +1,11 @@
 {
+    "menu": {
+      "about": "About",
+      "skills": "Stack",
+      "experience": "Experience",
+      "projects": "Projects",
+      "cv": "CV"
+    },
     "basic_info": {
       "description_parts": [
         "👋 Hi! Welcome to my webpage. I built this space to catalogue personal projects, blog posts and other things... and learn some React along the way. There's also a section on experience, for those interested in hiring me my CV lives in the burger menu.",

@@ -16,6 +16,7 @@ class App extends Component {
       foo: "bar",
       resumeData: {},
       sharedData: {},
+      menuItems: {},
     };
   }
 
@@ -56,7 +57,7 @@ class App extends Component {
       dataType: "json",
       cache: false,
       success: function (data) {
-        this.setState({ resumeData: data });
+        this.setState({ resumeData: data, menuItems: data.menu });
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
@@ -82,7 +83,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
+        <Header sharedData={this.state.sharedData.basic_info} menuItems={this.state.menuItems} />
         <div className="col-md-12 mx-auto text-center language">
           <div
             onClick={() =>

@@ -1,133 +1,130 @@
 {
-    "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 jajaja. ",
-      "section_name": {
-        "about": "O mnie",
-        "projects": "Projekty",
-        "skills": "Umiejętności",
-        "experience": "Doświadczenie"
-      }
-    },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
+  "menu": {
+    "about": "Acerca de",
+    "skills": "Tecnologías",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "cv": "CV"
+  },
+  "basic_info": {
+    "description_parts": [
+      "👋 ¡Hola! Bienvenido a mi página web. Construí este espacio para catalogar proyectos personales, publicaciones de blog y otras cosas... y aprender algo de React en el camino. También hay una sección sobre experiencia, para aquellos interesados en contratarme, mi CV está en el burger menu.",
+      "Me especializo en diseñar y desarrollar sistemas de datos integrales. Mi experiencia abarca desde la provisión de infraestructura y la optimización de tuberías de datos hasta la construcción y entrenamiento de modelos de aprendizaje automático y la creación de interfaces de usuario que facilitan la toma de decisiones basada en datos.",
+      "Además del trabajo por contrato, estoy construyendo una empresa llamada Burst. Aprende más sobre nosotros pronto."
     ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    "section_name": {
+      "about": "sobre mí",
+      "skills": "tecnologías",
+      "experience": "experiencia",
+      "projects": "proyectos"
+    }
+  },
+  "experience": [
+    {
+      "company": "UK Ministry of Justice (a través de MadeTech)",
+      "title": "Ingeniero de Datos Senior",
+      "years": "07.2023 - 04.2024",
+      "mainTech": [
+        "Python",
+        "Spark",
+        "AWS"
+      ],
+      "technologies": [
+        "PySpark",
+        "Airflow",
+        "Kafka",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Confluence",
+        "Jira"
+      ]
+    },
+    {
+      "company": "UK DVLA (a través de MadeTech)",
+      "title": "Ingeniero Senior",
+      "years": "03.2022 - 06.2023",
+      "mainTech": [
+        "Python",
+        "Azure"
+      ],
+      "technologies": [
+        "Databricks",
+        "SQL",
+        "Airflow",
+        "Docker",
+        "Terraform"
+      ]
+    },
+    {
+      "company": "Santander (a través de Kubrick)",
+      "title": "Científico de Datos",
+      "years": "08.2020 - 11.2021",
+      "mainTech": [
+        "Python"
+      ],
+      "technologies": [
+        "PySpark",
+        "Pandas",
+        "Numpy",
+        "Scikit-learn",
+        "Spacy",
+        "Plotly",
+        "Hadhoop",
+        "Hue"
+      ]
+    },
+    {
+      "company": "Deliveroo (a través de Kubrick)",
+      "title": "Ingeniero de Datos",
+      "years": "06.2019 - 06.2020",
+      "mainTech": [
+        "Python"
+      ],
+      "technologies": [
+        "SQL",
+        "Docker",
+        "AWS S3",
+        "Snowflake"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Pipelines sin Servidor con GCP",
+      "startDate": "2023",
+      "description": "",
+      "images": [
+        "images/portfolio/serverless.png"
+      ],
+      "url": "https://github.com/kalebsofer/serveless-pipelines-poc"
+    },
+    {
+      "title": "Una CNN Simple",
+      "startDate": "2024",
+      "description": "",
+      "images": [
+        "images/portfolio/simpleCNN.png"
+      ],
+      "url": "https://github.com/kalebsofer/simpleCNN"
+    },
+    {
+      "title": "GPT2 Desde Cero",
+      "startDate": "2024",
+      "description": "",
+      "images": [
+        "images/portfolio/gpt2.png"
+      ],
+      "url": "https://github.com/kalebsofer/reproducingGPT2"
+    },
+    {
+      "title": "Esta Página Web con React",
+      "startDate": "2024",
+      "description": "",
+      "images": [
+        "images/portfolio/webpage.png"
+      ],
+      "url": "https://github.com/kalebsofer/kalebsofer.github.io"
+    }
+  ]
+}

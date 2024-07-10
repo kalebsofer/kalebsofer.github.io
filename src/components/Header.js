@@ -42,11 +42,13 @@ class Header extends Component {
       var name = this.props.sharedData.name;
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
-
+  
     const HeaderTitleTypeAnimation = React.memo( () => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
-
+  
+    const { menuItems } = this.props;
+  
     return (
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
         <div className="row aligner" style={{height: '100%'}}>
@@ -124,11 +126,11 @@ class Header extends Component {
                   }
                 }}
               >
-                <Link className="menu-item" to="about" smooth={true} duration={500}>About</Link>
-                <Link className="menu-item" to="skills" smooth={true} duration={500}>Stack</Link>
-                <Link className="menu-item" to="2/.2" smooth={true} duration={500}>Experience</Link>
-                <Link className="menu-item" to="projects" smooth={true} duration={500}>Projects</Link>
-                <a className="menu-item" href="/docs/KSoferCV.pdf" download>CV</a>
+                <Link className="menu-item" to="about" smooth={true} duration={500}>{menuItems.about}</Link>
+                <Link className="menu-item" to="skills" smooth={true} duration={500}>{menuItems.skills}</Link>
+                <Link className="menu-item" to="experience" smooth={true} duration={500}>{menuItems.experience}</Link>
+                <Link className="menu-item" to="projects" smooth={true} duration={500}>{menuItems.projects}</Link>
+                <a className="menu-item" href="/docs/KSoferCV.pdf" download>{menuItems.cv}</a>
               </Menu>
               <div className={`burger-button ${this.state.menuOpen ? 'open' : ''}`} onClick={this.toggleMenu} style={{ transform: this.state.menuOpen ? 'translateX(-300px)' : 'translateX(0)' }}>
                 <span className="iconify" data-icon="mdi:menu" data-inline="false"></span>
@@ -138,7 +140,7 @@ class Header extends Component {
         </div>
       </header>
     );
-  }
+  }  
 }
 
 export default Header;
