@@ -1,10 +1,9 @@
 {
     "basic_info": {
       "description_parts": [
+        "👋 Hi! Welcome to my webpage. I built this space to catalogue personal projects, blog posts and other things... and learn some React along the way. There's also a section on experience, for those interested in hiring me my CV lives in the burger menu.",
         "I specialize in designing and developing comprehensive data systems. My expertise spans from provisioning infrastructure and optimizing data pipelines to building and training machine learning models and creating user interfaces that facilitate data-driven decision making.",
-        "I have extensive experience in both the private and public sectors, each presenting unique challenges. Recently, I collaborated with the Ministry of Justice on a large-scale data migration, transitioning critical outsourced systems to an in-house, accessible AWS environment.",
-        "Previously, I developed machine learning techniques for pattern detection in anti-money laundering investigations within the banking sector. Prior to that, I worked on the rapid scaling of a payments system for Deliveroo.",
-        "In addition to my contracting work, I'm building a company called Burst. Learn more about us here."
+        "In addition to contracting work, I'm building a company called Burst. Learn more about us here."
       ],
       "section_name": {
         "about": "about me",
@@ -85,72 +84,40 @@
     ],
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "title": "Serverless Pipelines with GCP",
+        "startDate": "2023",
+        "description": "",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/serverless.png"
         ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
+        "url": "https://github.com/kalebsofer/serveless-pipelines-poc"
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "title": "A Simple CNN",
+        "startDate": "2024",
+        "description": "",
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/simpleCNN.png"
         ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
+        "url": "https://github.com/kalebsofer/simpleCNN"
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "title": "GPT2 From Scratch",
+        "startDate": "2024",
+        "description": "",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/gpt2.png"
         ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
+        "url": "https://github.com/kalebsofer/reproducingGPT2"
+      },
+      {
+        "title": "This React Webpage",
+        "startDate": "2024",
+        "description": "",
+        "images": [
+          "images/portfolio/webpage.png"
+        ],
+        "url": "https://github.com/kalebsofer/kalebsofer.github.io"
       }
     ]
   }

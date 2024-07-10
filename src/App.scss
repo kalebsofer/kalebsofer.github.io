@@ -102,6 +102,7 @@ header {
 
 .bm-menu {
 	background: #373a47;
+	cursor: pointer;
 	padding: 1.5em 4.5em 0;
 	font-size: 1.5em;
 	overflow: hidden;
@@ -222,7 +223,7 @@ header h1 {
 }
 
 #about {
-	height: 60vh;
+	height: 66vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -232,8 +233,8 @@ header h1 {
 }
 
 #about h1 {
-	padding-top: 2%;
-		padding-bottom: 2%;
+	padding-top: 3%;
+		padding-bottom: 1%;
 		font: 18px / 24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -260,24 +261,25 @@ header h1 {
 	color: black;
 }
 
+.about-description {
+	font-size: 175%;
+	line-height: 200%;
+	opacity: 0;
+	transition: opacity 3s ease-in;
+	padding: 10px;
+}
 .circular-profile .profile-image {
-	width: 300px;
-	height: 300px;
+	width: 350px;
+		height: 350px;
 	object-fit: cover;
 	border-radius: 50%;
 }
 
-.about-description {
-	font-size: 150%;
-	line-height: 200%;
-	opacity: 0; // Initially hidden
-	transition: opacity 1s ease-in;
-}
 .circular-profile {
 	border-radius: 50%;
 	overflow: hidden;
-	width: 300px;
-	height: 300px;
+	width: 350px;
+		height: 350px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -327,7 +329,7 @@ header h1 {
 
 .project-title-settings {
 	margin-top: 5%;
-	font: 18px/24px 'opensans-bold', sans-serif;
+	font: 12px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: black;
@@ -548,12 +550,12 @@ header h1 {
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 }
 
 .section-title {
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 3%;
+		padding-bottom: 3%;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
