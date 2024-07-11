@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import tableauIcon from '../images/icons/tableau.svg';
 
 class Skills extends Component {
   render() {

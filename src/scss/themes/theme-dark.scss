@@ -38,6 +38,15 @@ body[data-theme='dark'] {
     }
   }
 
+  .header-icon {
+    color: aquamarine;
+  }
+
+  /* Burger Menu */
+  .burger-button .iconify {
+    color: white;
+  }
+
   #about {
     background-color: #7f7f7f;
     h1 span {
@@ -48,6 +57,9 @@ body[data-theme='dark'] {
     }
     .card {
       background: #6d6d6d;
+      color: white;
+    }
+    .about-description {
       color: white;
     }
   }

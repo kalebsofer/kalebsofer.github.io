@@ -3,7 +3,6 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
-import '../App.scss';
 
 class Header extends Component {
   titles = [];
@@ -18,15 +17,7 @@ class Header extends Component {
 
   onThemeSwitchChange(checked) {
     this.setState({ checked });
-    this.setTheme();
-  }
-
-  setTheme() {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-    body.setAttribute(dataThemeAttribute, newTheme);
+    this.props.toggleTheme();
   }
 
   handleStateChange(state) {
@@ -42,13 +33,13 @@ class Header extends Component {
       var name = this.props.sharedData.name;
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
-  
-    const HeaderTitleTypeAnimation = React.memo( () => {
+
+    const HeaderTitleTypeAnimation = React.memo(() => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
-  
-    const { menuItems } = this.props;
-  
+
+    const { menuItems, isDarkTheme } = this.props;
+
     return (
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
         <div className="row aligner" style={{height: '100%'}}>
@@ -128,11 +119,15 @@ class Header extends Component {
               >
                 <Link className="menu-item" to="about" smooth={true} duration={500}>{menuItems.about}</Link>
                 <Link className="menu-item" to="skills" smooth={true} duration={500}>{menuItems.skills}</Link>
-                <Link className="menu-item" to="experience" smooth={true} duration={500}>{menuItems.experience}</Link>
-                <Link className="menu-item" to="projects" smooth={true} duration={500}>{menuItems.projects}</Link>
+                <Link className="menu-item" to="resume" smooth={true} duration={500}>{menuItems.experience}</Link>
+                <Link className="menu-item" to="portfolio" smooth={true} duration={500}>{menuItems.projects}</Link>
                 <a className="menu-item" href="/docs/KSoferCV.pdf" download>{menuItems.cv}</a>
               </Menu>
-              <div className={`burger-button ${this.state.menuOpen ? 'open' : ''}`} onClick={this.toggleMenu} style={{ transform: this.state.menuOpen ? 'translateX(-300px)' : 'translateX(0)' }}>
+              <div 
+                className={`burger-button ${this.state.menuOpen ? 'open' : ''} ${isDarkTheme ? 'burger-menu-icon' : ''}`} 
+                onClick={this.toggleMenu} 
+                style={{ transform: this.state.menuOpen ? 'translateX(-300px)' : 'translateX(0)' }}
+              >
                 <span className="iconify" data-icon="mdi:menu" data-inline="false"></span>
               </div>
             </div>

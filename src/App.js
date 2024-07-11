@@ -9,7 +9,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 class App extends Component {
-
   constructor(props) {
     super();
     this.state = {
@@ -17,7 +16,15 @@ class App extends Component {
       resumeData: {},
       sharedData: {},
       menuItems: {},
+      isDarkTheme: false,
     };
+    this.toggleTheme = this.toggleTheme.bind(this);
+  }
+
+  toggleTheme() {
+    const newTheme = this.state.isDarkTheme ? "light" : "dark";
+    document.body.setAttribute("data-theme", newTheme);
+    this.setState({ isDarkTheme: !this.state.isDarkTheme });
   }
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
@@ -83,7 +90,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header sharedData={this.state.sharedData.basic_info} menuItems={this.state.menuItems} />
+        <Header
+          sharedData={this.state.sharedData.basic_info}
+          menuItems={this.state.menuItems}
+          isDarkTheme={this.state.isDarkTheme}
+          toggleTheme={this.toggleTheme}
+        />
         <div className="col-md-12 mx-auto text-center language">
           <div
             onClick={() =>
