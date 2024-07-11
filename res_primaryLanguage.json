@@ -1,0 +1,130 @@
+{
+    "menu": {
+      "about": "About",
+      "skills": "Stack",
+      "experience": "Experience",
+      "projects": "Projects",
+      "cv": "CV"
+    },
+    "basic_info": {
+      "description_parts": [
+        "👋 Welcome to my webpage! I built this space to catalogue personal projects, blog posts and other things... and learn some React along the way. There's also a section on experience, for those interested in hiring me my CV lives in the menu.",
+        "I specialize in designing and developing comprehensive data systems. My expertise spans from provisioning infrastructure and optimizing data pipelines to building and training machine learning models and creating user interfaces that facilitate data-driven decision making.",
+        "In addition to contracting work, I'm building a company called Burst. Learn more about us soon."
+      ],
+      "section_name": {
+        "about": "about me",
+        "skills": "stack",
+        "experience": "experience",
+        "projects": "projects"
+      }
+    },
+    "experience": [
+      {
+        "company": "UK Ministry of Justice (via MadeTech)",
+        "title": "Senior Data Engineer",
+        "years": "07.2023 - 04.2024",
+        "mainTech": [
+          "Python",
+          "Spark",
+          "AWS"
+        ],
+        "technologies": [
+          "PySpark",
+          "Airflow",
+          "Kafka",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "Confluence",
+          "Jira"
+        ]
+      },
+      {
+        "company": "UK DVLA (via MadeTech)",
+        "title": "Senior Engineer",
+        "years": "03.2022 - 06.2023",
+        "mainTech": [
+          "Python",
+          "Azure"
+        ],
+        "technologies": [
+          "Databricks",
+          "SQL",
+          "Airflow",
+          "Docker",
+          "Terraform"
+        ]
+      },
+      {
+        "company": "Santander (via Kubrick)",
+        "title": "Data Scientist",
+        "years": "08.2020 - 11.2021",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "PySpark",
+          "Pandas",
+          "Numpy",
+          "Scikit-learn",
+          "Spacy",
+          "Plotly",
+          "Hadhoop",
+          "Hue"
+        ]
+      },
+      {
+        "company": "Deliveroo (via Kubrick)",
+        "title": "Data Engineer",
+        "years": "06.2019 - 06.2020",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "SQL",
+          "Docker",
+          "AWS S3",
+          "Snowflake"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Serverless Pipelines with GCP",
+        "startDate": "2023",
+        "description": "",
+        "images": [
+          "images/portfolio/serverless.png"
+        ],
+        "url": "https://github.com/kalebsofer/serveless-pipelines-poc"
+      },
+      {
+        "title": "A Simple CNN",
+        "startDate": "2024",
+        "description": "",
+        "images": [
+          "images/portfolio/simpleCNN.png"
+        ],
+        "url": "https://github.com/kalebsofer/simpleCNN"
+      },
+      {
+        "title": "GPT2 From Scratch",
+        "startDate": "2024",
+        "description": "",
+        "images": [
+          "images/portfolio/gpt2.png"
+        ],
+        "url": "https://github.com/kalebsofer/reproducingGPT2"
+      },
+      {
+        "title": "This React Webpage",
+        "startDate": "2024",
+        "description": "",
+        "images": [
+          "images/portfolio/webpage.png"
+        ],
+        "url": "https://github.com/kalebsofer/kalebsofer.github.io"
+      }
+    ]
+  }

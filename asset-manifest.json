@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kalebsofer.github.io/kalebsofer.github.io/static/css/main.77e5d5d8.css",
+    "main.js": "/kalebsofer.github.io/kalebsofer.github.io/static/js/main.2c7d6407.js",
+    "index.html": "/kalebsofer.github.io/kalebsofer.github.io/index.html",
+    "main.77e5d5d8.css.map": "/kalebsofer.github.io/kalebsofer.github.io/static/css/main.77e5d5d8.css.map",
+    "main.2c7d6407.js.map": "/kalebsofer.github.io/kalebsofer.github.io/static/js/main.2c7d6407.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77e5d5d8.css",
+    "static/js/main.2c7d6407.js"
+  ]
+}
