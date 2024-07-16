@@ -9,7 +9,7 @@ const About = ({ sharedBasicInfo, resumeBasicInfo }) => {
   return (
     <section id="about" className="about-section">
       <div className="col-md-12">
-        <h1 className="about-heading">
+        <h1 className="section-title">
           <span>{sectionName}</span>
         </h1>
         <div className="row center mx-auto mb-5">

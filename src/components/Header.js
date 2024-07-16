@@ -99,23 +99,6 @@ class Header extends Component {
                 onStateChange={(state) => this.handleStateChange(state)}
                 customBurgerIcon={false}
                 customCrossIcon={false}
-                styles={{
-                  bmMenuWrap: {
-                    top: '0px',
-                    height: 'auto',
-                    width: '500px',
-                  },
-                  bmMenu: {
-                    width: '300px',
-                  },
-                  bmOverlay: {
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    position: 'fixed'
-                  }
-                }}
               >
                 <Link className="menu-item" to="about" smooth={true} duration={500}>{menuItems.about}</Link>
                 <Link className="menu-item" to="skills" smooth={true} duration={500}>{menuItems.skills}</Link>
@@ -124,11 +107,16 @@ class Header extends Component {
                 <a className="menu-item" href="/docs/KSoferCV.pdf" download>{menuItems.cv}</a>
               </Menu>
               <div 
-                className={`burger-button ${this.state.menuOpen ? 'open' : ''} ${isDarkTheme ? 'burger-menu-icon' : ''}`} 
+                className={`bm-burger-button ${this.state.menuOpen ? 'open' : ''} ${isDarkTheme ? 'dark-theme' : ''}`} 
                 onClick={this.toggleMenu} 
-                style={{ transform: this.state.menuOpen ? 'translateX(-300px)' : 'translateX(0)' }}
               >
-                <span className="iconify" data-icon="mdi:menu" data-inline="false"></span>
+                <span className="iconify" data-icon={this.state.menuOpen ? "mdi:close" : "mdi:menu"} data-inline="false"></span>
+              </div>
+              <div 
+                className={`bm-cross-button ${this.state.menuOpen ? 'visible' : 'hidden'}`}
+                onClick={this.toggleMenu} 
+              >
+                <span className="iconify" data-icon="mdi:close" data-inline="false"></span>
               </div>
             </div>
           </div>
