@@ -1,6 +1,6 @@
 # kalebsofer.com
 
-Welcome to my personal webpage, a React-based project for indexing my projects, experience and other stuff. Check out the live version at [kalebsofer.com](kalebsofer.com)
+Welcome to my personal webpage, a React-based project for indexing my projects, experience and other stuff. Check out the live version at [kalebsofer.com](https://www.kalebsofer.com)
 
 
 ## Getting Started
