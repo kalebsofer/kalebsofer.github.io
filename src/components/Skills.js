@@ -22,11 +22,8 @@ class Skills extends Component {
           <li className="list-inline-item mx-3" key={i}>
             <span>
               <div className="text-center skills-tile">
-                <i className={skill.class} style={{ fontSize: "220%" }}>
-                  <p
-                    className="text-center"
-                    style={{ fontSize: "30%", marginTop: "4px", fontFamily: 'Montserrat' }}
-                  >
+                <i className={skill.class}>
+                  <p className="text-center skill-name">
                     {skill.name}
                   </p>
                 </i>

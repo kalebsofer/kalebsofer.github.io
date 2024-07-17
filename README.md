@@ -48,6 +48,12 @@ npm run build
 
 The optimized build will be located in the build directory, ready to be deployed.
 
+To deploy the project to GitHub Pages, run:
+
+```sh
+npm run deploy
+```
+
 ## Project Structure
 
 - **public/**: Contains the static assets and the HTML template.

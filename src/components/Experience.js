@@ -32,7 +32,7 @@ class Experience extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
                 contentStyle={{ background: '#fff', color: '#000' }}
-                contentArrowStyle={{ borderRight: '1vh solid #fff' }}
+                contentArrowStyle={{ borderRight: '1.5vh solid #fff' }}
             date={work.years}
                 iconStyle={{ background: '#fff', color: '#000', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                 icon={
@@ -77,19 +77,18 @@ class Experience extends Component {
         </div>
         <div className="col-md-8 mx-auto">
                 <VerticalTimeline>
-            {work}
-            <VerticalTimelineElement
-                        iconStyle={{
-                            background: 'rgb(16, 204, 82)',
-                            color: '#fff',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                        icon={<i className="fas fa-sun experience-icon" style={{ fontSize: '34px', marginTop: '2px' }}></i>}
-            />
+                  {work}
+                  <VerticalTimelineElement
+                    iconStyle={{
+                      background: 'rgb(16, 204, 82)',
+                      color: '#fff',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}
+                    icon={<i className="fas fa-sun experience-icon" style={{ fontSize: '4em', marginTop: '0' }}></i>}
+                  />
                 </VerticalTimeline>
-
         </div>
       </section>
     );

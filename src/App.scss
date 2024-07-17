@@ -50,7 +50,7 @@ header {
 }
 
 .header-container {
-  height: calc(100vh - 10vh);
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -130,7 +130,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: auto;
+  height: 100%;
   position: fixed;
   right: 0;
   top: 0;
@@ -144,11 +144,12 @@ header {
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  top: 0;
 }
 
 .bm-item-list {
-  padding-top: 8vh; /* Converted 6em to vh */
-  height: 50%; /* No change needed */
+  padding-top: 8vh; 
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -196,20 +197,13 @@ header {
   color: white;
 }
 
-.skills-tile {
-  background-color: transparentize(#f8f5f4, 0.95);
-  padding: 1vh 1vw 0.5vh 1vw; 
-  width: 6vw; 
-  height: 9vh;
-  margin: 0.5vh 0 0.5vh 0; 
-  border-radius: 0.6vh; 
-}
+
 
 .category-title {
   text-align: center;
-  margin-top: 1.5vh; /* Converted 20px to vh */
-  margin-bottom: 1vh; /* Converted 10px to vh */
-  font-size: 1.5em; /* Keeping em as they are relative units */
+  margin-top: 1.5vh; 
+  margin-bottom: 1vh;
+  font-size: 1.5em; 
   color: #ffffff;
 }
 
@@ -249,6 +243,21 @@ header h1 {
   display: none;
 }
 
+.section-title {
+  padding-top: 3%; 
+  padding-bottom: 3%;
+  font: 2vh / 1.67vh 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15vw;
+  color: #fff;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding-top: 10%; 
+    padding-bottom: 5%;
+  }
+}
+
 #about {
   height: 66vh;
   display: flex;
@@ -257,73 +266,71 @@ header h1 {
   align-items: center;
   background: #fff;
   overflow: hidden;
-}
 
-#about h1 {
-  padding-top: 3%; 
-  padding-bottom: 1%; 
-  font:
-    2vh / 1.67vh 'opensans-bold', 
-    sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.12vw; 
-  color: black;
-  text-align: center;
-}
+  @media (max-width: 768px) {
+    height: 100vh; // Adjust this value as needed for mobile
+    }
 
-.about-description {
-	color: black;
-  }
-
-  #about p {
+  .about-description {
+    color: black;
+    font-size: 2vh;
+    line-height: 1.25em;
     opacity: 0;
-    transform: translateY(7vh); /* Converted 100px to vh */
-    transition:
-      opacity 1s ease-out,
-      transform 1s ease-out;
+    transition: opacity 5s ease-in;
+    padding: 1vh; 
   }
 
-#about p.fade-in {
-  opacity: 1;
-  transform: translateY(0);
+  .about-section {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .circular-profile .profile-image {
+    width: 50vh; 
+    height: 50vh; 
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .circular-profile .profile-image {
+    width: 50vh; 
+    height: 50vh; 
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .circular-profile .profile-image {
+      width: 30vh;  // Adjust this value as needed
+      height: 30vh; // Adjust this value as needed
+    }
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .profile-container {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }
 
-.about-section {
-  font-family: 'Montserrat', sans-serif;
+.fade-in {
+  opacity: 1 !important;
 }
 
-.about-heading {
-  color: black;
-}
-
-.about-description {
-  font-size: 175%;
-  line-height: 200%;
-  opacity: 0;
-  transition: opacity 3s ease-in;
-  padding: 1vh; 
-}
-
-.circular-profile .profile-image {
-  width: 50vh; 
-  height: 50vh; 
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.circular-profile {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 50vh; 
-  height: 50vh; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border: 0.35vh solid #fff; 
-  box-shadow: 0 0.28vh 0.56vh rgba(0, 0, 0, 0.1); 
-}
-
+/* Projects */
 .foto img {
   display: block;
   width: 100%;
@@ -332,13 +339,13 @@ header h1 {
 .foto div {
   background: #ffffff;
   display: inline-block;
-  margin: 0 auto 3.47vh auto; /* Converted 5% to vh */
-  padding: 0.7vh 0.7vh 0.35vh; /* Converted 10px and 5px to vh */
+  margin: 0 auto 3.47vh auto; 
+  padding: 0.7vh 0.7vh 0.35vh; 
   text-align: center;
   text-decoration: none;
-  -webkit-box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3); /* Converted 4px and 6px to vh */
-  -moz-box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3); /* Converted 4px and 6px to vh */
-  box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3); /* Converted 4px and 6px to vh */
+  -webkit-box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3); 
+  -moz-box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -348,10 +355,10 @@ header h1 {
 
 .foto div:after {
   color: #333;
-  font-size: 1.7vh; /* Converted 25px to vh */
+  font-size: 1.7vh; 
   content: attr(title);
   position: relative;
-  top: 1vh; /* Converted 15px to vh */
+  top: 1vh; 
 }
 
 .foto div:hover {
@@ -428,11 +435,17 @@ header h1 {
   background: #efe1bd;
 }
 
-.experience-icon {
-  font-size: 300%;
-  margin-top: 25%;
-  text-align: center;
-}
+// .experience-icon {
+//   font-size: 300%;
+//   margin-top: 25%;
+//   text-align: center;
+
+//   @media only screen and (max-width: 1170px) {
+//       font-size: 12vh; 
+//       margin-top: 19vh;
+//       text-align: center;
+//     }
+//   }
 
 .main-badge {
   font-size: 1.5vh !important; /* Converted 13px to vh */
@@ -461,11 +474,18 @@ header h1 {
   margin: 0 !important;
 }
 
-@media only screen and (max-width: 1170px) {
-  .experience-icon {
-    font-size: 11.8vh; /* Converted 170% to vh */
-    margin-top: 18.75vh; /* Converted 27% to vh */
-    text-align: center;
+.vertical-timeline::before {
+  top: 0; /* Align the top of the timeline bar with the first icon */
+  height: calc(100% - 1.5rem); /* Adjust the height to stop at the last icon */
+  left: 15px; /* Ensure this aligns with your icons, adjust as needed */
+}
+
+.vertical-timeline-element {
+  &.vertical-timeline-element--work {
+    .vertical-timeline-element-icon {
+      top: 0;
+      margin-top: 0; /* Align the first icon correctly */
+    }
   }
 }
 
@@ -562,7 +582,6 @@ header h1 {
   position: relative; 
   width: 100%;
   text-align: center;
-  // margin-bottom: 0; 
 }
   
 .portfolio-img {
@@ -601,35 +620,53 @@ font-size: 1.5rem;
     display: block;
   }
   .portfolio .portfolio-item {
-    margin-bottom: 2.1vh; /* Converted 30px to vh */
+    margin-bottom: 2.1vh; 
   }
 }
 
+/* Skills */
 #skills {
   background: #1f1f1f;
-  min-height: 20vh; /* Converted 200px to vh */
+  // min-height: 20vh; 
+  height: 100vh;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 5%; /* Keeping percentage as it is relative */
-}
-
-.section-title {
-  padding-top: 3%; /* Keeping percentage as it is relative */
-  padding-bottom: 3%; /* Keeping percentage as it is relative */
-  font:
-    2vh / 1.67vh 'opensans-bold', /* Converted 18px and 24px to vh */
-    sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.15vw; /* Converted 3px to vw */
-  color: #fff;
-  text-align: center;
+  padding-bottom: 3%; 
 }
 
 .skill-icon {
-  font-size: 180%;
+  --icon-size: 210%;
+  --text-size: 30%;
+  
+  font-size: var(--icon-size);
   color: white;
   text-align: center;
   position: relative;
+  padding: 1vh;
+
+  @media (max-width: 768px) {
+    --icon-size: 200%; 
+    --text-size: 30%; 
+  }
+
+  @media (max-width: 480px) {
+    --icon-size: 200%; 
+    --text-size: 30%; 
+  }
+}
+
+.skills-tile i {
+  font-size: var(--icon-size);
+}
+
+.skill-name {
+  font-size: var(--text-size);
+  margin-top: 1vh;
+  font-family: 'Montserrat';
+
+  @media (max-width: 768px) {
+    font-size: var(--text-size);
+  }
 }
 
 footer {
