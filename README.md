@@ -48,11 +48,13 @@ npm run build
 
 The optimized build will be located in the build directory, ready to be deployed.
 
-To deploy the project to GitHub Pages, run:
+To deploy the project to GitHub Pages, first commit and push all local changes to main, keeping gh-pages and main in sync, then run:
 
 ```sh
 npm run deploy
 ```
+
+Which will build the project and push the build to the gh-pages branch.
 
 ## Project Structure
 
@@ -75,7 +77,7 @@ To update your portfolio content, edit the JSON files located in the `src/data` 
 
 To customize the styling, modify the SCSS files in the `src/styles` directory. The styles are organized to provide a clean and maintainable structure.
 
-## Credits
+## Credit
 
 This project was a fork of the [react-frontend-dev-portfolio](https://github.com/Dorota1997/react-frontend-dev-portfolio) created by [Dorota1997](https://github.com/Dorota1997). Special thanks for the inspiration and foundational work.
 
