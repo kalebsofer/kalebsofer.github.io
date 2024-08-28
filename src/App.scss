@@ -22,9 +22,6 @@ body {
   justify-content: center;
 }
 
-.title-container {
-  height: 5vh;
-}
 
 .title-styles {
   font-family: 'Montserrat', sans-serif;
@@ -36,6 +33,7 @@ body {
   width: 20vw;
 }
 
+// header section block
 header {
   position: relative;
   height: 100vh;
@@ -49,14 +47,28 @@ header {
   padding-bottom: 0;
 }
 
-.header-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+// header title
+header h1 {
+  font-size: 400%;
+  text-align: left;
+  font-weight: 600;
+  color: #353239;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto 1.25vh auto; 
+  width: 50%;
+  position: relative;
+  top: -25vh; 
+  left: -18vw;
 }
 
-.header-icon {
-  font-size: 4rem;
+// header job title
+.title-container {
+  height: 5vh;
+  text-align: left;
+  width: 50%;
+  position: relative;
+  top: -25vh; 
+  left: 6.75vw;
 }
 
 .title-styles {
@@ -64,8 +76,21 @@ header {
   font-weight: bold;
 }
 
+.theme-switch-container {
+  width: 50%;
+  text-align: center;
+  position: absolute; /* Ensure the element can be positioned */
+  top: 30vh; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// theme switch
 .react-switch {
   margin-top: 1rem;
+  margin-bottom: 1rem;
+  // position: fixed; 
+  // bottom: 1vh;
 }
 
 /* Burger styles */
@@ -197,8 +222,6 @@ header {
   color: white;
 }
 
-
-
 .category-title {
   text-align: center;
   margin-top: 1.5vh; 
@@ -212,17 +235,6 @@ header {
   background-color: #e9d5a1;
   padding-bottom: 5vh; 
   padding-top: 5vh;
-}
-
-header h1 {
-  font-size: 400%; /* Keeping percentage as it is relative */
-  text-align: center;
-  font-weight: 600 !important;
-  color: #353239;
-  font-family: 'Montserrat', sans-serif;
-  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 0 auto 1.25vh auto; /* Converted 18px to vh */
-  width: 100%;
 }
 
 .slider-image {
