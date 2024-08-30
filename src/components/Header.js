@@ -3,6 +3,8 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
+import PolaroidPicture from './PolaroidPicture'; // Import the new component
+
 
 class Header extends Component {
   titles = [];
@@ -41,18 +43,27 @@ class Header extends Component {
     const { menuItems, isDarkTheme } = this.props;
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+      <header id="home" style={{display: 'block' }}>
+        {/* Parent div for the title and job title */}
+        <div className="header-title-wrapper">
+          <h1 className="mb-0">
+            <Typical steps={[name]} wrapper="p" />
+          </h1>
+          <div className="title-container">
+            <HeaderTitleTypeAnimation />
+          </div>
+        </div>
+        {/* Profile picture element */}
+        <div className="header-profile-pic">
+          <PolaroidPicture
+            imageSrc={this.props.sharedData ? `images/${this.props.sharedData.image}` : ""}
+            altText="Profile Picture"
+            description="This is the back of the Polaroid with a handwritten description."
+          />
+        </div>
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div>
-              {/* <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span> */}
-              {/* <br/> */}
-              <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
-              </h1>
-              <div className="title-container">
-                <HeaderTitleTypeAnimation />
-              </div>
               <div className="theme-switch-container">
                 <Switch
                   checked={this.state.checked}
@@ -90,11 +101,11 @@ class Header extends Component {
                         marginLeft: "10px",
                         color: "#353239",
                       }}
-                  ></span>
+                    ></span>
                   }
                   id="icon-switch"
                 />
-              </div>  
+              </div>
               <Menu
                 right
                 isOpen={this.state.menuOpen}

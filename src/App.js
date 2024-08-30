@@ -91,6 +91,8 @@ class App extends Component {
     return (
       <div>
         <Header
+          resumeBasicInfo={this.state.resumeData.basic_info}
+          sharedBasicInfo={this.state.sharedData.basic_info}
           sharedData={this.state.sharedData.basic_info}
           menuItems={this.state.menuItems}
           isDarkTheme={this.state.isDarkTheme}
@@ -130,11 +132,11 @@ class App extends Component {
             ></span>
           </div>
         </div>
-        <About
+        {/* <About
           id="about"
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
-        />
+        /> */}
         <Skills
           id="skills"
           sharedSkills={this.state.sharedData.skills}
