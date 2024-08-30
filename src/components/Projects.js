@@ -3,9 +3,12 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 class Projects extends Component {
   render() {
+    let sectionName;
+    let projects = [];
+
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
-      var projects = this.props.resumeProjects.map(function (project) {
+      sectionName = this.props.resumeBasicInfo.section_name.projects;
+      projects = this.props.resumeProjects.map(function (project) {
         return (
           <div
             className="portfolio-item"
@@ -40,13 +43,17 @@ class Projects extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="col-md-12 mx-auto">
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-            >
-              <Masonry gutter="15px">
-                {projects}
-              </Masonry>
-            </ResponsiveMasonry>
+            {projects.length > 0 ? (
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+              >
+                <Masonry gutter="15px">
+                  {projects}
+                </Masonry>
+              </ResponsiveMasonry>
+            ) : (
+              <p>No projects available at the moment.</p> // Fallback UI
+            )}
           </div>
         </div>
       </section>

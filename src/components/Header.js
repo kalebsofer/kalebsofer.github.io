@@ -3,7 +3,8 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
-import PolaroidPicture from './PolaroidPicture'; // Import the new component
+import PolaroidPicture from './PolaroidPicture';
+import Fade from "react-reveal/Fade";
 
 
 class Header extends Component {
@@ -39,8 +40,10 @@ class Header extends Component {
     const HeaderTitleTypeAnimation = React.memo(() => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
+    
+    const { menuItems, isDarkTheme, resumeBasicInfo } = this.props;
 
-    const { menuItems, isDarkTheme } = this.props;
+    const descriptions = resumeBasicInfo?.description_parts || [];
 
     return (
       <header id="home" style={{display: 'block' }}>
@@ -58,7 +61,13 @@ class Header extends Component {
           <PolaroidPicture
             imageSrc={this.props.sharedData ? `images/${this.props.sharedData.image}` : ""}
             altText="Profile Picture"
-            description="This is the back of the Polaroid with a handwritten description."
+            description={descriptions.map((item, index) => (
+              <Fade bottom key={index}>
+                <p style={{ color: 'black', fontFamily: "'Indie Flower', cursive", fontSize: "1.5rem"}}>
+                  {item}
+                </p>
+              </Fade>
+            ))}
           />
         </div>
         <div className="row aligner" style={{height: '100%'}}>

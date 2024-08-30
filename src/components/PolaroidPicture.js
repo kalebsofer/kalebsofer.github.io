@@ -13,7 +13,7 @@ const PolaroidPicture = ({ imageSrc, altText, description }) => {
       <div className="polaroid-inner">
         <div className="polaroid-front">
           <img src={imageSrc} alt={altText} />
-          <p>flip</p>
+          <p>👆</p>
         </div>
         <div className="polaroid-back">
           <p>{description}</p>

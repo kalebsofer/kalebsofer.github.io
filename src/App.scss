@@ -75,16 +75,19 @@ header {
 
 .header-profile-pic {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // width: 30vh;
-  height: 45vh;
-  // border-radius: 50% / 100%;
+  width: auto; /* Let the width scale automatically based on height */
+  height: 70vh;
+  aspect-ratio: 3 / 5;
   overflow: hidden; /* Ensure image does not overflow the div */
   z-index: 10;
-  // background-color: white; /* Optional: to help the image stand out */
+  background-color: transparent;
   border: 2px solid blue; /* Adds a red border around the entire header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-profile-pic img {
