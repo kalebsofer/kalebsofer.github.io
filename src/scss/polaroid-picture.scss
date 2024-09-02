@@ -30,12 +30,10 @@
   background-color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   flex-direction: column;
-  // padding: 1vw;
-  // box-sizing: border-box;
 }
 
 .polaroid-front {
-  padding: 1vw; /* Adjust the padding to create the Polaroid border effect */
+  padding: 2rem;
   box-sizing: border-box;
 }
 

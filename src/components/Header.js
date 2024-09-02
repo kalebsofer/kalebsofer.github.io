@@ -45,8 +45,6 @@ class Header extends Component {
 
     const descriptions = resumeBasicInfo?.description_parts || [];
 
-    // Inside the render() method of Header.js
-
 return (
   <header id="header-top" style={{ display: 'block' }}>
     {/* Language selector block */}
@@ -94,7 +92,6 @@ return (
         ></span>
       </div>
     </div>
-
     {/* Main content */}
     <div id="home" style={{ display: 'block' }}>
       {/* Parent div for the title and job title */}
