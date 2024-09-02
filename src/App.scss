@@ -97,21 +97,54 @@ header {
   border-radius: inherit; /* Inherit the border-radius from the parent */
 }
 
+// .theme-switch-container {
+//   width: 50%;
+//   text-align: center;
+//   position: relative; /* Ensure the element can be positioned */
+//   top: 90vh; /* Adjust this value as needed */
+//   left: 50%;
+//   transform: translateX(-50%);
+//   border: 2px solid blue; /* Adds a red border around the entire header */
+//   z-index: 10; /* Ensure it's above other elements */
+// }
+
+// // theme switch
+// .react-switch {
+//   margin-top: 1rem;
+//   margin-bottom: 1rem;
+// }
+
 .theme-switch-container {
-  width: 50%;
+  position: absolute;
+  width: 30%;
+  height: auto;
   text-align: center;
-  position: fixed; /* Ensure the element can be positioned */
-  top: 90vh; /* Adjust this value as needed */
+  border: 2px solid blue;
   left: 50%;
   transform: translateX(-50%);
-  border: 2px solid blue; /* Adds a red border around the entire header */
-  z-index: 10; /* Ensure it's above other elements */
-}
+  bottom: 4vh;
+  z-index: 10; 
 
-// theme switch
-.react-switch {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  .react-switch {
+    margin: 1rem;
+    width: 8rem; /* Adjusted width to accommodate larger icons */
+    height: 4rem; /* Adjusted height to fit larger icons */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between icons to keep them aligned */
+    padding: 0 0.5rem; 
+  }
+
+  .theme-switch-icon {
+    font-size: 2rem;
+    color: #353239;
+    
+    &.unchecked-icon,
+    &.checked-icon {
+      margin-left: 0.5rem; 
+      margin-top: 0.5rem; 
+    }
+  }
 }
 
 /* Burger styles */

@@ -70,76 +70,57 @@ class Header extends Component {
             ))}
           />
         </div>
-        <div className="row aligner" style={{height: '100%'}}>
-          <div className="col-md-12">
-            <div>
-              <div className="theme-switch-container">
-                <Switch
-                  checked={this.state.checked}
-                  onChange={this.onThemeSwitchChange}
-                  offColor="#baaa80"
-                  onColor="#353535"
-                  className="react-switch mx-auto"
-                  width={90}
-                  height={40}
-                  uncheckedIcon={
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:owl"
-                      data-inline="false"
-                      style={{
-                        display: "block",
-                        height: "100%",
-                        fontSize: 25,
-                        textAlign: "end",
-                        marginLeft: "20px",
-                        color: "#353239",
-                      }}
-                    ></span>
-                  }
-                  checkedIcon={
-                    <span
-                      className="iconify"
-                      data-icon="noto-v1:sun-with-face"
-                      data-inline="false"
-                      style={{
-                        display: "block",
-                        height: "100%",
-                        fontSize: 25,
-                        textAlign: "end",
-                        marginLeft: "10px",
-                        color: "#353239",
-                      }}
-                    ></span>
-                  }
-                  id="icon-switch"
-                />
-              </div>
-              <Menu
-                right
-                isOpen={this.state.menuOpen}
-                onStateChange={(state) => this.handleStateChange(state)}
-                customBurgerIcon={false}
-                customCrossIcon={false}
-              >
-                <Link className="menu-item" to="about" smooth={true} duration={500}>{menuItems.about}</Link>
-                <Link className="menu-item" to="skills" smooth={true} duration={500}>{menuItems.skills}</Link>
-                <Link className="menu-item" to="resume" smooth={true} duration={500}>{menuItems.experience}</Link>
-                <Link className="menu-item" to="portfolio" smooth={true} duration={500}>{menuItems.projects}</Link>
-                <a className="menu-item" href="/docs/KSoferCV.pdf" download>{menuItems.cv}</a>
-              </Menu>
-              <div 
-                className={`bm-burger-button ${this.state.menuOpen ? 'open' : ''} ${isDarkTheme ? 'dark-theme' : ''}`} 
-                onClick={this.toggleMenu} 
-              >
-                <span className="iconify" data-icon={this.state.menuOpen ? "mdi:close" : "mdi:menu"} data-inline="false"></span>
-              </div>
-              <div 
-                className={`bm-cross-button ${this.state.menuOpen ? 'visible' : 'hidden'}`}
-                onClick={this.toggleMenu} 
-              >
-                <span className="iconify" data-icon="mdi:close" data-inline="false"></span>
-              </div>
+        <div className="row-aligner" style={{height: '100%',  border: "2px solid green"}}>
+          {/* <div className="col-md-12" style={{border: "2px solid green"}}> */}
+          <div>
+            <div className="theme-switch-container">
+              <Switch
+                checked={this.state.checked}
+                onChange={this.onThemeSwitchChange}
+                offColor="#baaa80"
+                onColor="#353535"
+                className="react-switch mx-auto"
+                uncheckedIcon={
+                  <span
+                    className="iconify theme-switch-icon unchecked-icon"
+                    data-icon="twemoji:owl"
+                    data-inline="false"
+                  ></span>
+                }
+                checkedIcon={
+                  <span
+                    className="iconify theme-switch-icon checked-icon"
+                    data-icon="noto-v1:sun-with-face"
+                    data-inline="false"
+                  ></span>
+                }
+                id="icon-switch"
+              />
+            </div>
+            <Menu
+              right
+              isOpen={this.state.menuOpen}
+              onStateChange={(state) => this.handleStateChange(state)}
+              customBurgerIcon={false}
+              customCrossIcon={false}
+            >
+              <Link className="menu-item" to="about" smooth={true} duration={500}>{menuItems.about}</Link>
+              <Link className="menu-item" to="skills" smooth={true} duration={500}>{menuItems.skills}</Link>
+              <Link className="menu-item" to="resume" smooth={true} duration={500}>{menuItems.experience}</Link>
+              <Link className="menu-item" to="portfolio" smooth={true} duration={500}>{menuItems.projects}</Link>
+              <a className="menu-item" href="/docs/KSoferCV.pdf" download>{menuItems.cv}</a>
+            </Menu>
+            <div 
+              className={`bm-burger-button ${this.state.menuOpen ? 'open' : ''} ${isDarkTheme ? 'dark-theme' : ''}`} 
+              onClick={this.toggleMenu} 
+            >
+              <span className="iconify" data-icon={this.state.menuOpen ? "mdi:close" : "mdi:menu"} data-inline="false"></span>
+            </div>
+            <div 
+              className={`bm-cross-button ${this.state.menuOpen ? 'visible' : 'hidden'}`}
+              onClick={this.toggleMenu} 
+            >
+              <span className="iconify" data-icon="mdi:close" data-inline="false"></span>
             </div>
           </div>
         </div>
