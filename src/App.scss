@@ -34,6 +34,7 @@ body {
   width: 20vw;
 }
 
+
 // header section block
 header {
   position: relative;
@@ -41,22 +42,16 @@ header {
   width: 100%;
   background-color: #e9d5a1;
   background-size: cover;
-  // text-align: left;
   padding-top: 12vh;
   padding-bottom: 0;
 }
 
-.header-title-wrapper {
-  border: 2px solid red; /* Adds a red border around the entire header */
-}
-
 .mb-0 {
   font-family: 'Montserrat', sans-serif;
-  // font-size: 400%;
   font-weight: 600;
   font-size: 4rem;
   padding-left: 8vw;
-  border: 2px solid blue; /* Adds a red border around the entire header */
+  z-index: 10;
 }
 
 // header job title
@@ -65,7 +60,7 @@ header {
   width: 75vw;
   position: relative;
   padding-left: 8vw;
-  border: 2px solid blue; /* Adds a red border around the entire header */
+  z-index: 10;
 }
 
 .title-styles {
@@ -75,16 +70,15 @@ header {
 
 .header-profile-pic {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto; /* Let the width scale automatically based on height */
+  width: auto; 
   height: 70vh;
   aspect-ratio: 3 / 5;
-  overflow: hidden; /* Ensure image does not overflow the div */
+  overflow: hidden; 
   z-index: 10;
   background-color: transparent;
-  border: 2px solid blue; /* Adds a red border around the entire header */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,33 +87,15 @@ header {
 .header-profile-pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the div */
-  border-radius: inherit; /* Inherit the border-radius from the parent */
+  object-fit: cover; 
+  border-radius: inherit; 
 }
-
-// .theme-switch-container {
-//   width: 50%;
-//   text-align: center;
-//   position: relative; /* Ensure the element can be positioned */
-//   top: 90vh; /* Adjust this value as needed */
-//   left: 50%;
-//   transform: translateX(-50%);
-//   border: 2px solid blue; /* Adds a red border around the entire header */
-//   z-index: 10; /* Ensure it's above other elements */
-// }
-
-// // theme switch
-// .react-switch {
-//   margin-top: 1rem;
-//   margin-bottom: 1rem;
-// }
 
 .theme-switch-container {
   position: absolute;
   width: 30%;
   height: auto;
   text-align: center;
-  border: 2px solid blue;
   left: 50%;
   transform: translateX(-50%);
   bottom: 4vh;
@@ -127,11 +103,11 @@ header {
 
   .react-switch {
     margin: 1rem;
-    width: 8rem; /* Adjusted width to accommodate larger icons */
-    height: 4rem; /* Adjusted height to fit larger icons */
+    width: 8rem; 
+    height: 4rem; 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between icons to keep them aligned */
+    justify-content: space-between; 
     padding: 0 0.5rem; 
   }
 
@@ -146,6 +122,30 @@ header {
     }
   }
 }
+
+/* Language switcher */
+.language {
+//   position: absolute;
+//   top: 0;
+//   height: 5vh;
+//   z-index: 1;
+//   display: flex;
+//   justify-content: center;
+//   border: 2px solid red;
+// }
+
+.language div {
+  display: inline;
+  font-size: 1.5rem;
+  padding-top: 0.5vh;
+}
+
+.language-icon {
+  margin-right: 1.25rem; /* equivalent to mr-5 */
+}
+}
+
+// style={{ display: "inline" , fontSize: "1.5rem", paddingTop: "0.5vh"}}
 
 /* Burger styles */
 .bm-burger-button {
@@ -350,35 +350,6 @@ header {
     font-family: 'Montserrat', sans-serif;
   }
 
-  // .circular-profile .profile-image {
-  //   width: 50vh; 
-  //   height: 50vh; 
-  //   object-fit: cover;
-  //   border-radius: 50%;
-  // }
-
-  // @media (max-width: 768px) {
-  //   .circular-profile .profile-image {
-  //     width: 30vh;  // Adjust this value as needed
-  //     height: 30vh; // Adjust this value as needed
-  //   }
-  // }
-
-  // .about-content {
-  //   display: flex;
-  //   flex-direction: row;
-
-  //   @media (max-width: 768px) {
-  //     flex-direction: column;
-  //     align-items: center;
-  //     text-align: center;
-
-  //     .profile-container {
-  //       margin-bottom: 2rem;
-  //     }
-  //   }
-  // }
-
   .text-container {
     max-width: 100%;
     padding: 0 1rem;
@@ -563,57 +534,6 @@ header {
   margin-top: 2.5vh; /* Converted 36px to vh */
   list-style: none;
 }
-
-// .bars li {
-//   position: relative;
-//   margin-bottom: 60px;
-//   background: #ccc;
-//   height: 42px;
-//   border-radius: 3px;
-// }
-
-// .bars li em {
-//   font:
-//     15px 'opensans-bold',
-//     sans-serif;
-//   color: #313131;
-//   text-transform: uppercase;
-//   letter-spacing: 2px;
-//   font-weight: normal;
-//   position: relative;
-//   top: -36px;
-// }
-
-// .bar-expand {
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   margin: 0;
-//   padding-right: 0.94vw; /* Converted 24px to vw */
-//   background: #313131;
-//   display: inline-block;
-//   height: 2.9vh; /* Converted 42px to vh */
-//   line-height: 2.9vh; /* Converted 42px to vh */
-//   border-radius: 0.2vh 0 0 0.2vh; /* Converted 3px to vh */
-// }
-
-// .modal-close {
-//   text-align: right;
-//   padding: 0.7vh 1vw 0.7vh 1vw; /* Converted 10px and 15px to vh/vw */
-//   cursor: pointer;
-// }
-
-// .close-icon {
-//   color: black;
-//   font-weight: lighter !important;
-// }
-
-// .modal-description {
-//   text-align: justify;
-//   padding: 5px 5px 0 5px;
-//   margin-bottom: 20px;
-//   font-size: 12px;
-// }
 
 .awssld__next {
   outline: none !important;
