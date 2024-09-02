@@ -168,6 +168,11 @@ return (
           >
             <span className="iconify" data-icon="mdi:close" data-inline="false"></span>
           </div>
+          <div className="more-here-container">
+            <p className="more-here-text">
+              more below <span className="arrow">&#8595;</span>
+            </p> 
+          </div>
         </div>
       </div>
     </div>

@@ -123,29 +123,49 @@ header {
   }
 }
 
-/* Language switcher */
-.language {
-//   position: absolute;
-//   top: 0;
-//   height: 5vh;
-//   z-index: 1;
-//   display: flex;
-//   justify-content: center;
-//   border: 2px solid red;
-// }
-
-.language div {
-  display: inline;
-  font-size: 1.5rem;
-  padding-top: 0.5vh;
+.more-here-container {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
 }
 
-.language-icon {
-  margin-right: 1.25rem; /* equivalent to mr-5 */
-}
+.more-here-container .arrow {
+  display: inline-block;
+  animation: bounce 2s infinite;
 }
 
-// style={{ display: "inline" , fontSize: "1.5rem", paddingTop: "0.5vh"}}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-1vh);
+  }
+  60% {
+    transform: translateY(-0.5vh);
+  }
+}
+
+@media (max-width: 768px) {
+  .more-here-container {
+    position: absolute;
+    bottom: 5%; 
+    right: 0%; 
+    margin-top: 5vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 769px) {
+  .more-here-container {
+    right: calc(5% + 15vw); 
+  }
+}
 
 /* Burger styles */
 .bm-burger-button {
@@ -412,28 +432,6 @@ header {
   text-align: center;
 }
 
-// .polaroid img {
-//   display: block;
-//   max-width: 7.8vw; /* Converted 200px to vw */
-// }
-
-// .polaroid span {
-//   background: #ffffff;
-//   display: inline-block;
-//   margin: 3.82vh 5.86vw 2.08vh; /* Converted 55px, 75px, and 30px to vh/vw */
-//   padding: 1.04vh 1.04vh 2.08vh; /* Converted 15px and 30px to vh */
-//   text-align: center;
-//   text-decoration: none;
-//   -webkit-box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3); /* Converted 4px and 6px to vh */
-//   -moz-box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3); /* Converted 4px and 6px to vh */
-//   box-shadow: 0 0.28vh 0.42vh rgba(0, 0, 0, 0.3); /* Converted 4px and 6px to vh */
-//   -webkit-transition: all 0.2s linear;
-//   -moz-transition: all 0.2s linear;
-//   transition: all 0.2s linear;
-//   z-index: 0;
-//   position: relative;
-// }
-
 .link-href {
   color: black;
 }
@@ -447,13 +445,6 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
-// #preview {
-//   width: 19.5vw; /* Converted 500px to vw */
-//   background-color: #ebeaf5;
-//   padding: 1.04vh; /* Converted 15px to vh */
-//   position: relative;
-//   margin-bottom: 15%; /* Keeping percentage as it is relative */
-// }
 
 .center {
   display: flex;
