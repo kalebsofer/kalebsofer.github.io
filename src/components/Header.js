@@ -150,7 +150,6 @@ return (
             customBurgerIcon={false}
             customCrossIcon={false}
           >
-            <Link className="menu-item" to="about" smooth={true} duration={500}>{menuItems.about}</Link>
             <Link className="menu-item" to="skills" smooth={true} duration={500}>{menuItems.skills}</Link>
             <Link className="menu-item" to="resume" smooth={true} duration={500}>{menuItems.experience}</Link>
             <Link className="menu-item" to="portfolio" smooth={true} duration={500}>{menuItems.projects}</Link>

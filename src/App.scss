@@ -344,40 +344,40 @@ header {
   }
 }
 
-#about {
-  height: 66vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  overflow: hidden;
+// #about {
+//   height: 66vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   background: #fff;
+//   overflow: hidden;
 
-  @media (max-width: 768px) {
-    height: 100vh; // Adjust this value as needed for mobile
-    }
+//   @media (max-width: 768px) {
+//     height: 100vh; // Adjust this value as needed for mobile
+//     }
 
-  .about-description {
-    color: black;
-    font-size: 2vh;
-    line-height: 1.25em;
-    opacity: 0;
-    transition: opacity 5s ease-in;
-    padding: 1vh; 
-  }
+//   .about-description {
+//     color: black;
+//     font-size: 2vh;
+//     line-height: 1.25em;
+//     opacity: 0;
+//     transition: opacity 5s ease-in;
+//     padding: 1vh; 
+//   }
 
-  .about-section {
-    font-family: 'Montserrat', sans-serif;
-  }
+//   .about-section {
+//     font-family: 'Montserrat', sans-serif;
+//   }
 
-  .text-container {
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-}
+//   .text-container {
+//     max-width: 100%;
+//     padding: 0 1rem;
+//   }
+// }
 
 .fade-in {
-  opacity: 1 !important;
+  opacity: 5 !important;
 }
 
 /* Projects */

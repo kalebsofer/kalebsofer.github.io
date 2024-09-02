@@ -48,6 +48,15 @@ body[data-theme='dark'] {
     color: white;
   }
 
+  /* More here text */
+  .more-here-container {
+    color: cyan;
+  }
+  
+  .more-here-container .arrow {
+    color: cyan; 
+  }
+
   /* About Section */
   #about {
     background-color: #7f7f7f;
