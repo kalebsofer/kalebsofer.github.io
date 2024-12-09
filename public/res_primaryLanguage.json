@@ -8,9 +8,9 @@
     },
     "basic_info": {
       "description_parts": [
-        "👋 I built this space to catalogue personal projects, blog posts and other things... and learn some React along the way. There's also a section on experience, for those interested in hiring me my CV lives in the menu.",
-        "I specialize in designing and developing comprehensive data systems. My expertise spans from provisioning infrastructure and optimizing data pipelines to building and training machine learning models and creating user interfaces that facilitate data-driven decision making.",
-        "In addition to contracting work, I'm building a company called Softmax. Learn more about us soon."
+        "👋 I built this space to catalogue personal projects, blog posts and other things... and learn some React along the way. There's also a section on experience, for those interested in hiring me, my CV lives in the menu.",
+        "I specialize in designing and building data intensive applications. Recently, I've been having fun training and deploying various transformers, see projects below.",
+        "Also, I'm building a company called <a href=\"https://softmaxco.io\" target=\"_blank\" rel=\"noopener noreferrer\">Softmax</a>."
       ],
       "section_name": {
         "about": "about me",
@@ -90,6 +90,38 @@
       }
     ],
     "projects": [
+      {
+        "title": "Image Captioning transformer & deployment",
+        "startDate": "2024",
+        "images": [
+          "images/portfolio/imgcapdep.png"
+        ],
+        "url": "https://github.com/kalebsofer/DeployImageCaptioning"
+      },
+      {
+        "title": "Search Engine with Two-Tower RNNs",
+        "startDate": "2024",
+        "images": [
+          "images/portfolio/simplesearch.png"
+        ],
+        "url": "https://github.com/kalebsofer/DeploySearch"
+      },
+      {
+        "title": "Audio Transcription with Whisper",
+        "startDate": "2024",
+        "images": [
+          "images/portfolio/audiostack.png"
+        ],
+        "url": "https://github.com/kalebsofer/AudioTransformer"
+      },
+      {
+        "title": "Softmax Webpage with TypeScript",
+        "startDate": "2024",
+        "images": [
+          "images/portfolio/softmax.png"
+        ],
+        "url": "https://github.com/kalebsofer/softmaxfront"
+      },
       {
         "title": "Serverless Pipelines with GCP",
         "startDate": "2023",

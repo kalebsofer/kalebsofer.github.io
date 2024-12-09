@@ -73,9 +73,7 @@ To update your portfolio content, edit the JSON files located in the `src/data` 
 - **res_primaryLanguage.json**: Main content for your portfolio including project details, skills, and basic information.
 - **portfolio_shared_data.json**: Shared content data such as your name and other personal information.
 
-### Styling
-
-To customize the styling, modify the SCSS files in the `src/styles` directory. The styles are organized to provide a clean and maintainable structure.
+To customize the styling, modify the SCSS files in the `src/styles` directory.
 
 ## Credit
 

@@ -106,6 +106,12 @@
         "category": "Data Visualization"
       },
       {
+        "name": "Streamlit",
+        "class": "devicon-streamlit-plain",
+        "level": "90",
+        "category": "Data Visualization"
+      },
+      {
         "name": "Jira",
         "class": "devicon-jira-plain",
         "level": "90",
