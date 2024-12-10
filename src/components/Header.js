@@ -44,19 +44,9 @@ class Header extends Component {
     const descriptions = resumeBasicInfo?.description_parts || [];
 
     return (
-      <header id="header-top" style={{ display: 'block' }}>
+      <header id="header-top" className="header-top">
         {/* Language selector block */}
-        <div 
-          className="col-md-12 mx-auto text-center language" 
-          style={{
-            position: 'absolute', 
-            top: '0vh', 
-            height: '5vh',
-            zIndex: "1",
-            display: 'flex',
-            justifyContent: 'center',
-          }}
-        >
+        <div className="language-selector">
           <div
             onClick={() =>
               this.props.applyPickedLanguage(
@@ -64,7 +54,7 @@ class Header extends Component {
                 window.$secondaryLanguageIconId
               )
             }
-            style={{ display: "inline" , fontSize: "1.5rem", paddingTop: "0.5vh"}}
+            className="language-icon-container"
           >
             <span
               className="iconify language-icon mr-5"
@@ -80,7 +70,7 @@ class Header extends Component {
                 window.$primaryLanguageIconId
               )
             }
-            style={{ display: "inline" , fontSize: "1.5rem", paddingTop: "0.5vh"}}
+            className="language-icon-container"
           >
             <span
               className="iconify language-icon"
@@ -91,7 +81,7 @@ class Header extends Component {
           </div>
         </div>
         {/* Main content */}
-        <div id="home" style={{ display: 'block' }}>
+        <div id="home" className="home">
           {/* Parent div for the title and job title */}
           <div className="header-title-wrapper">
             <h1 className="mb-0">
@@ -112,14 +102,14 @@ class Header extends Component {
           <div className="profile-description">
             {descriptions.map((item, index) => (
               <Fade bottom key={index}>
-                <p 
-                  style={{ color: 'black', fontFamily: "'Indie Flower', cursive", fontSize: "1.5rem" }}
+                <p
+                  className="profile-description-text"
                   dangerouslySetInnerHTML={{ __html: item }}
                 />
               </Fade>
             ))}
           </div>
-          <div className="row-aligner" style={{ height: '100%'}}>
+          <div className="row-aligner">
             <div>
               <div className="theme-switch-container">
                 <Switch
@@ -171,7 +161,7 @@ class Header extends Component {
               </div>
               <div className="more-here-container">
                 <p className="more-here-text">
-                  more below <span className="arrow">&#8595;</span>
+                  <span className="arrow">&#8595;</span>
                 </p> 
               </div>
             </div>

@@ -34,7 +34,7 @@ body {
   width: 20vw;
 }
 
-
+/////////////////////HEADER/////////////////////
 // header section block
 header {
   position: relative;
@@ -42,7 +42,7 @@ header {
   width: 100%;
   background-color: #e9d5a1;
   background-size: cover;
-  padding-top: 12vh;
+  padding-top: 0vh;
   padding-bottom: 0;
   overflow: hidden;
 
@@ -52,16 +52,80 @@ header {
   }
 }
 
+.header-top {
+  display: block;
+  height: 100vh;
+}
+
+.language-selector {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.language-icon-container {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-top: 0.5vh;
+}
+
+.home {
+  display: block;
+  margin-top: -5vh;
+
+  @media (min-width: 769px) {
+    margin-top: 20vh;
+  }
+}
+
+// Header title wrapper
+.header-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: 769px) {
+    align-items: flex-start;
+    padding: 0 5vw;
+  }
+}
+
+// name title
 .mb-0 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 4rem;
   padding-left: 8vw;
-  z-index: 10;
+  padding-top: 0vh;
+  z-index: 5;
 
   @media (max-width: 768px) {
     font-size: 3rem;
-    padding-top: 10vh;
+    padding-top: 1vh;
+  }
+}
+
+.styles_typicalWrapper__1_Uvh::after {
+  cursor: none !important;
+  display: none;
+  margin-top: 0;
+}
+
+// job title 
+.title-styles {
+  font-size: 2rem;
+  font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
   }
 }
 
@@ -74,17 +138,28 @@ header {
   z-index: 10;
 
   @media (max-width: 768px) {
-    padding-top: 5vh;
+    // justify-content: center;    
   }
 }
 
-.title-styles {
-  font-size: 2rem;
-  font-weight: bold;
+// profile description
+.profile-description {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  font-size: 1.7rem;
 
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
+  @media (min-width: 769px) {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 5rem;
+    font-size: 2rem;
   }
+}
+
+.profile-description-text {
+  color: black;
+  font-family: 'Indie Flower', cursive;
 }
 
 .header-profile-pic {
@@ -92,8 +167,21 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 769px) {
+    margin-top: 5vh;
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
 }
 
+// profile picture
 .profile-circle {
   width: 60vw;
   height: 60vw;
@@ -102,32 +190,7 @@ header {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #e9d5a1;
-}
-
-.header-title-wrapper {
-  margin-top: 1rem;
-  text-align: left;
-}
-
-@media (max-width: 768px) {
-  .header-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1rem;
-  }
-
-  .header-profile-pic {
-    margin-top: 1rem;
-  }
-}
-
-.profile-description {
-  text-align: center;
-  margin-top: 1rem;
-  padding: 0 2rem;
-  font-size: 4rem;
-}
+} 
 
 .theme-switch-container {
   position: absolute;
@@ -165,17 +228,22 @@ header {
 .more-here-container {
   position: absolute;
   bottom: 5%;
-  right: 5%;
+  right: 10%;
   font-family: 'Indie Flower', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   z-index: 1;
 
   @media (max-width: 768px) {
     bottom: 55vh;
-    right: 50%;
-    transform: translateX(50%);
+    right: 10%;
   }
+}
+
+.more-here-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .more-here-container .arrow {
@@ -199,10 +267,7 @@ header {
   .more-here-container {
     position: absolute;
     bottom: 5%; 
-    right: 0%; 
-    margin-top: 5vh;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    right: 10%; 
   }
 }
 
@@ -367,11 +432,6 @@ header {
 
 .slider-iconfiy {
   margin-top: 0.7vh; 
-}
-
-.styles_typicalWrapper__1_Uvh::after {
-  cursor: none !important;
-  display: none;
 }
 
 .section-title {
@@ -674,3 +734,5 @@ footer a:focus {
   margin-top: 3vh;
   font-size: 3vh;
 }
+
+
