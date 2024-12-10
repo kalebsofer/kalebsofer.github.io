@@ -91,23 +91,26 @@ class Header extends Component {
               <HeaderTitleTypeAnimation />
             </div>
           </div>
-          {/* Profile picture element */}
-          <div className="header-profile-pic">
-            <img
-              src={this.props.sharedData ? `images/${this.props.sharedData.image}` : ""}
-              alt="Profile Picture"
-              className="profile-circle"
-            />
-          </div>
-          <div className="profile-description">
-            {descriptions.map((item, index) => (
-              <Fade bottom key={index}>
-                <p
-                  className="profile-description-text"
-                  dangerouslySetInnerHTML={{ __html: item }}
-                />
-              </Fade>
-            ))}
+          {/* New container for profile picture and description */}
+          <div className="header-profile-container">
+            {/* Profile picture element */}
+            <div className="header-profile-pic">
+              <img
+                src={this.props.sharedData ? `images/${this.props.sharedData.image}` : ""}
+                alt="Profile Picture"
+                className="profile-circle"
+              />
+            </div>
+            <div className="profile-description">
+              {descriptions.map((item, index) => (
+                <Fade bottom key={index}>
+                  <p
+                    className="profile-description-text"
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  />
+                </Fade>
+              ))}
+            </div>
           </div>
           <div className="row-aligner">
             <div>

@@ -35,6 +35,7 @@ body {
 }
 
 /////////////////////HEADER/////////////////////
+
 // header section block
 header {
   position: relative;
@@ -150,8 +151,8 @@ header {
   font-size: 1.7rem;
 
   @media (min-width: 769px) {
-    text-align: center;
-    margin-top: 2rem;
+    text-align: left;
+    margin-top: 0;
     padding: 0 5rem;
     font-size: 2rem;
   }
@@ -160,6 +161,21 @@ header {
 .profile-description-text {
   color: black;
   font-family: 'Indie Flower', cursive;
+}
+
+// Add a container to hold both elements
+.header-profile-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 5vh;
+  }
 }
 
 .header-profile-pic {
@@ -173,11 +189,11 @@ header {
   transform: translateX(-50%);
 
   @media (min-width: 769px) {
-    margin-top: 5vh;
+    margin-top: 0; // Remove margin-top for side-by-side layout
     position: static;
     transform: none;
     top: auto;
-    left: auto;
+    left: auto; // Reset left position
   }
 }
 
@@ -667,11 +683,10 @@ font-size: 1.5rem;
 /* Skills */
 #skills {
   background: #1f1f1f;
-  // min-height: 20vh; 
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 3%; 
+  padding-bottom: 1%;
 }
 
 .skill-icon {
