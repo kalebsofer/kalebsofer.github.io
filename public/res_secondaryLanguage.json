@@ -11,21 +11,21 @@
     "close": "Cerrar"
   },
   "hero": {
-    "availability": "● Abierto a cofundadores · aceptando clientes",
+    "availability": "● Actualmente aceptando clientes",
     "headline_line1": "Ingeniero",
     "headline_line2": "de datos",
     "headline_line3": "fundador",
     "caption": "campo de flujo · mueve el cursor"
   },
   "intro": {
-    "lead_before": "Hola — soy Kaleb. Construyo los sistemas que hacen útiles los datos, y últimamente los modelos que se apoyan en ellos. Diez años entre el sector público británico, banca y delivery. Ahora casi toda mi energía va a ",
+    "lead_before": "Hola — soy Kaleb. Construyo los sistemas que hacen útiles los datos, y últimamente los modelos que se apoyan en ellos. Seis años entre el sector público británico, banca y Deliveroo. Ahora casi toda mi energía va a ",
     "lead_link": "Softmax",
     "lead_after": ".",
     "cta_primary": "Trabaja con Softmax",
     "cta_primary_url": "https://www.softmaxco.io/#contact",
     "cta_secondary": "Saluda",
     "email": "kalebsofer+hello@gmail.com",
-    "photo_caption": "Londres · GMT · respondo en un día"
+    "photo_caption": "Londres · GMT · respondo en un día (o lo intento)"
   },
   "marquee": "Python — Spark — PyTorch — Terraform — Kafka — Airflow — Kubernetes — GCP — AWS — ",
   "softmax": {
@@ -33,10 +33,10 @@
     "name": "Softmax",
     "body": "Un pequeño estudio para productos intensivos en datos: retrieval que funciona, modelos que caben, pipelines que puedes traspasar. Actualmente aceptando clientes, y me gustaría conocer cofundadores.",
     "services": [
-      { "title": "Retrieval", "description": "búsqueda + RAG que devuelve lo correcto" },
-      { "title": "Inferencia", "description": "modelos pequeños, baratos de servir" },
-      { "title": "Plataformas", "description": "pipelines que un equipo puede mantener" },
-      { "title": "Asesoría", "description": "dos días por semana, manos en el teclado" }
+      { "title": "Agentes en producción", "description": "Construyendo el harness adecuado para tu equipo" },
+      { "title": "Retrieval", "description": "Búsqueda + RAG que devuelve lo correcto" },
+      { "title": "Plataformas", "description": "Pipelines y UIs que un equipo puede mantener" },
+      { "title": "Modernización", "description": "Actualizar sistemas antiguos para integrar IA" }
     ],
     "cta": "softmaxco.io ↗",
     "url": "https://softmaxco.io"
@@ -44,15 +44,15 @@
   "now": {
     "eyebrow": "Ahora",
     "items": [
-      { "key": "Construyendo", "value": "Softmax — retrieval + inferencia para equipos con muchos datos" },
-      { "key": "Entrenando", "value": "transformers pequeños, casi siempre en una sola GPU" },
-      { "key": "Leyendo", "value": "Cursando el [programa de Machine Learning de Founders & Coders](https://www.foundersandcoders.com/)" },
+      { "key": "Construyendo", "value": "Softmax — ingeniería y consultoría para equipos con muchos datos" },
+      { "key": "Formando", "value": "Impartiendo talleres de AI Engineering para Founders & Coders C.I.C" },
+      { "key": "Estudiando", "value": "Matriculado en el [programa de Machine Learning de Founders & Coders](https://www.foundersandcoders.com/)" },
       { "key": "Abierto a", "value": "cofundadores, y proyectos de cliente" }
     ],
     "stats": [
-      { "number": "10 años", "label": "en datos de producción" },
-      { "number": "4", "label": "sectores" },
-      { "number": "8", "label": "proyectos abiertos" },
+      { "number": "6 años", "label": "en datos de producción" },
+      { "number": "3", "label": "sectores en producción" },
+      { "number": "2", "label": "proyectos abiertos" },
       { "number": "1", "label": "empresa, en construcción" }
     ]
   },
@@ -67,17 +67,17 @@
     ]
   },
   "stack": {
-    "heading": "El stack",
+    "heading": "Stacks conocidos",
     "groups": [
       { "name": "Ingeniería de datos", "line": "Python · Spark · SQL · Airflow · Kafka · Docker · Kubernetes" },
-      { "name": "Machine learning", "line": "PyTorch · scikit-learn · transformers · entrenamiento desde cero" },
+      { "name": "Machine learning", "line": "PyTorch · TensorFlow · LangChain & LangGraph" },
       { "name": "Cloud e infra", "line": "AWS · GCP · Azure · Terraform" },
       { "name": "Visualización", "line": "Plotly · matplotlib · Streamlit" },
-      { "name": "Delivery", "line": "Jira · Confluence · Trello · agile en sector público" }
+      { "name": "Delivery", "line": "Jira · Productboard · Trello · Notion · Miro" }
     ]
   },
   "experience": {
-    "heading": "Dónde he estado",
+    "heading": "Dónde he trabajado",
     "jobs": [
       {
         "years": "2023 — 2024",
@@ -110,11 +110,11 @@
     ]
   },
   "education": {
-    "heading": "Dónde he aprendido",
+    "heading": "Dónde he estudiado",
     "items": [
       {
         "years": "2026 — presente",
-        "title": "Aprendizaje de Machine Learning",
+        "title": "Aprendizaje de Machine Learning (Nivel 6)",
         "company": "[Founders and Coders](https://www.foundersandcoders.com/) · para ingenieros de software con experiencia",
         "mainTech": [],
         "technologies": ["Tiempo parcial", "1 año"]
@@ -122,7 +122,7 @@
       {
         "years": "2024",
         "title": "Formación Avanzada en Deep Learning",
-        "company": "[Machine Learning Institute](https://ml.institute/)",
+        "company": "[The Machine Learning Institute](https://ml.institute/)",
         "mainTech": [],
         "technologies": ["Tiempo completo", "4 meses"]
       },
@@ -137,7 +137,7 @@
   },
   "work": {
     "heading": "Proyectos personales",
-    "hint": "toca una tarjeta para abrir la nota",
+    "hint": "haz clic en una tarjeta para abrir la nota",
     "status": {
       "fetching": "consultando api.github.com…",
       "live": "en vivo · api.github.com",
