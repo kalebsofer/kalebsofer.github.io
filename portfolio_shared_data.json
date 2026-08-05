@@ -15,6 +15,11 @@
         "name": "medium",
         "url": "https://medium.com/@kalebsofer",
         "class": "fab fa-brands fa-medium"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/kalebsofer/",
+        "class": "fab fa-linkedin"
       }
     ],
     "image": "myProfile.png"
