@@ -1,130 +1,84 @@
-import React, { Component } from "react";
-import $ from "jquery";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-// import About from "./components/About";
+import Nav from "./components/Nav";
+import HeroFlowField from "./components/HeroFlowField";
+import Intro from "./components/Intro";
+import Marquee from "./components/Marquee";
+import SoftmaxNow from "./components/SoftmaxNow";
+import Principles from "./components/Principles";
+import Stack from "./components/Stack";
 import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Work from "./components/Work";
+import Footer from "./components/Footer";
+import useGitHub from "./hooks/useGitHub";
 
-class App extends Component {
-  constructor(props) {
-    super();
-    this.state = {
-      foo: "bar",
-      resumeData: {},
-      sharedData: {},
-      menuItems: {},
-      isDarkTheme: false,
-    };
-    this.toggleTheme = this.toggleTheme.bind(this);
-    this.applyPickedLanguage = this.applyPickedLanguage.bind(this);
-    this.swapCurrentlyActiveLanguage = this.swapCurrentlyActiveLanguage.bind(this);
-  }
-
-  toggleTheme() {
-    const newTheme = this.state.isDarkTheme ? "light" : "dark";
-    document.body.setAttribute("data-theme", newTheme);
-    this.setState({ isDarkTheme: !this.state.isDarkTheme });
-  }
-
-  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-    document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
-    this.loadResumeFromPath(resumePath);
-  }
-
-  swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
-
-  componentDidMount() {
-    this.loadSharedData();
-    this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
-    );
-  }
-
-  loadResumeFromPath(path) {
-    $.ajax({
-      url: path,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ resumeData: data, menuItems: data.menu });
-      }.bind(this),
-      error: function (xhr, status, err) {
-        alert(err);
-      },
-    });
-  }
-
-  loadSharedData() {
-    $.ajax({
-      url: `portfolio_shared_data.json`,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
-      }.bind(this),
-      error: function (xhr, status, err) {
-        alert(err);
-      },
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Header
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-          sharedData={this.state.sharedData.basic_info}
-          menuItems={this.state.menuItems}
-          isDarkTheme={this.state.isDarkTheme}
-          toggleTheme={this.toggleTheme}
-          applyPickedLanguage={this.applyPickedLanguage}
-        />
-        {/* <About
-          id="about"
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        /> */}
-        <Skills
-          id="skills"
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          id="experience"
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Projects
-          id="projects"
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-      </div>
-    );
-  }
+function initialTheme() {
+  try {
+    const fromUrl = new URLSearchParams(window.location.search).get("theme");
+    if (fromUrl === "light" || fromUrl === "dark") return fromUrl;
+    const saved = localStorage.getItem("theme");
+    if (saved === "light" || saved === "dark") return saved;
+  } catch (e) {}
+  return "light";
 }
 
-export default App;
+export default function App() {
+  const [theme, setTheme] = useState(initialTheme);
+  const [lang, setLang] = useState("en");
+  const [content, setContent] = useState(null);
+  const [shared, setShared] = useState(null);
+  const gh = useGitHub();
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", theme);
+    try {
+      localStorage.setItem("theme", theme);
+    } catch (e) {}
+  }, [theme]);
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    const path = lang === "en" ? "res_primaryLanguage.json" : "res_secondaryLanguage.json";
+    fetch(`${process.env.PUBLIC_URL}/${path}`)
+      .then((r) => r.json())
+      .then(setContent)
+      .catch(() => {});
+  }, [lang]);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/portfolio_shared_data.json`)
+      .then((r) => r.json())
+      .then((data) => {
+        setShared(data);
+        if (data.basic_info && data.basic_info.name) document.title = data.basic_info.name;
+      })
+      .catch(() => {});
+  }, []);
+
+  if (!content) return null;
+
+  const social = shared && shared.basic_info ? shared.basic_info.social : [];
+  const icons = shared && shared.skills ? shared.skills.icons : [];
+
+  return (
+    <div className="site">
+      <Nav
+        nav={content.nav}
+        lang={lang}
+        onPickLang={setLang}
+        theme={theme}
+        onToggleTheme={() => setTheme(theme === "light" ? "dark" : "light")}
+      />
+      <HeroFlowField theme={theme} hero={content.hero} />
+      <Intro intro={content.intro} softmaxUrl={content.softmax.url} />
+      <Marquee text={content.marquee} />
+      <SoftmaxNow softmax={content.softmax} now={content.now} />
+      <Principles principles={content.principles} />
+      <Stack stack={content.stack} icons={icons} />
+      <Experience experience={content.experience} />
+      {content.education && <Experience experience={content.education} />}
+      <Work work={content.work} gh={gh} />
+      <Footer writing={content.writing} footer={content.footer} social={social} />
+    </div>
+  );
+}

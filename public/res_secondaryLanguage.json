@@ -1,162 +1,256 @@
 {
-  "menu": {
-    "about": "Sobre M",
-    "skills": "Tecnologías",
-    "experience": "Experiencia",
-    "projects": "Proyectos",
-    "cv": "CV"
-  },
-  "basic_info": {
-    "description_parts": [
-  "👋 Construí este espacio para catalogar proyectos personales, publicaciones de blog y otras cosas... y aprender algo de React en el camino. También hay una sección sobre mi experiencia; para aquellos interesados en contratarme, mi CV está en el menú.",
-      "Me especializo en diseñar y construir aplicaciones intensivas en datos. Recientemente, he estado divirtiéndome entrenando y desplegando varios transformers. Mira los proyectos a continuación.",
-      "Además, estoy construyendo una empresa llamada <a href=\"https://softmaxco.io\" target=\"_blank\" rel=\"noopener noreferrer\">Softmax</a>."
+  "nav": {
+    "links": [
+      { "label": "Softmax", "target": "softmax" },
+      { "label": "Stack", "target": "stack" },
+      { "label": "Proyectos", "target": "work" },
+      { "label": "Escritura", "target": "writing" }
     ],
-    "section_name": {
-      "about": "sobre mí",
-      "skills": "tecnologías",
-      "experience": "experiencia",
-      "projects": "proyectos"
-    }
+    "cv": "CV ↓",
+    "menu": "Menú",
+    "close": "Cerrar"
   },
-  "experience": [
-    {
-      "company": "UK Ministry of Justice (a través de MadeTech)",
-      "title": "Ingeniero de Datos Senior",
-      "years": "07.2023 - 04.2024",
-      "mainTech": [
-        "Python",
-        "Spark",
-        "AWS"
-      ],
-      "technologies": [
-        "PySpark",
-        "Airflow",
-        "Kafka",
-        "Docker",
-        "Kubernetes",
-        "Terraform",
-        "Confluence",
-        "Jira"
-      ]
+  "hero": {
+    "availability": "● Abierto a cofundadores · aceptando clientes",
+    "headline_line1": "Ingeniero",
+    "headline_line2": "de datos",
+    "headline_line3": "fundador",
+    "caption": "campo de flujo · mueve el cursor"
+  },
+  "intro": {
+    "lead_before": "Hola — soy Kaleb. Construyo los sistemas que hacen útiles los datos, y últimamente los modelos que se apoyan en ellos. Diez años entre el sector público británico, banca y delivery. Ahora casi toda mi energía va a ",
+    "lead_link": "Softmax",
+    "lead_after": ".",
+    "cta_primary": "Trabaja con Softmax",
+    "cta_primary_url": "https://www.softmaxco.io/#contact",
+    "cta_secondary": "Saluda",
+    "email": "kalebsofer+hello@gmail.com",
+    "photo_caption": "Londres · GMT · respondo en un día"
+  },
+  "marquee": "Python — Spark — PyTorch — Terraform — Kafka — Airflow — Kubernetes — GCP — AWS — ",
+  "softmax": {
+    "eyebrow": "Construyendo ahora",
+    "name": "Softmax",
+    "body": "Un pequeño estudio para productos intensivos en datos: retrieval que funciona, modelos que caben, pipelines que puedes traspasar. Actualmente aceptando clientes, y me gustaría conocer cofundadores.",
+    "services": [
+      { "title": "Retrieval", "description": "búsqueda + RAG que devuelve lo correcto" },
+      { "title": "Inferencia", "description": "modelos pequeños, baratos de servir" },
+      { "title": "Plataformas", "description": "pipelines que un equipo puede mantener" },
+      { "title": "Asesoría", "description": "dos días por semana, manos en el teclado" }
+    ],
+    "cta": "softmaxco.io ↗",
+    "url": "https://softmaxco.io"
+  },
+  "now": {
+    "eyebrow": "Ahora",
+    "items": [
+      { "key": "Construyendo", "value": "Softmax — retrieval + inferencia para equipos con muchos datos" },
+      { "key": "Entrenando", "value": "transformers pequeños, casi siempre en una sola GPU" },
+      { "key": "Leyendo", "value": "Cursando el [programa de Machine Learning de Founders & Coders](https://www.foundersandcoders.com/)" },
+      { "key": "Abierto a", "value": "cofundadores, y proyectos de cliente" }
+    ],
+    "stats": [
+      { "number": "10 años", "label": "en datos de producción" },
+      { "number": "4", "label": "sectores" },
+      { "number": "8", "label": "proyectos abiertos" },
+      { "number": "1", "label": "empresa, en construcción" }
+    ]
+  },
+  "principles": {
+    "heading": "Cómo trabajo",
+    "items": [
+      { "number": "01", "title": "Descubrimiento", "description": "Entender el problema antes que las herramientas: quién es dueño de los datos, qué significa 'bien', y qué se ha intentado ya." },
+      { "number": "02", "title": "P.O.C", "description": "Empieza con lo más barato que pueda responder la pregunta, y gánate cada parámetro extra." },
+      { "number": "03", "title": "Beta", "description": "Ponlo delante de usuarios reales pronto — mide, rómpelo, y deja que el feedback marque el roadmap." },
+      { "number": "04", "title": "Producción", "description": "Lo ingenioso se queda en el notebook. Lo que se despliega debe poder leerse a las 4am por alguien que no lo escribió." },
+      { "number": "05", "title": "Entrega", "description": "Un sistema no está terminado hasta que el equipo que lo hereda puede cambiarlo sin mí en la sala." }
+    ]
+  },
+  "stack": {
+    "heading": "El stack",
+    "groups": [
+      { "name": "Ingeniería de datos", "line": "Python · Spark · SQL · Airflow · Kafka · Docker · Kubernetes" },
+      { "name": "Machine learning", "line": "PyTorch · scikit-learn · transformers · entrenamiento desde cero" },
+      { "name": "Cloud e infra", "line": "AWS · GCP · Azure · Terraform" },
+      { "name": "Visualización", "line": "Plotly · matplotlib · Streamlit" },
+      { "name": "Delivery", "line": "Jira · Confluence · Trello · agile en sector público" }
+    ]
+  },
+  "experience": {
+    "heading": "Dónde he estado",
+    "jobs": [
+      {
+        "years": "2023 — 2024",
+        "title": "Ingeniero de Datos Senior",
+        "company": "UK Ministry of Justice (vía MadeTech)",
+        "mainTech": ["Python", "Spark", "AWS"],
+        "technologies": ["PySpark", "Airflow", "Kafka", "Docker", "Kubernetes", "Terraform"]
+      },
+      {
+        "years": "2022 — 2023",
+        "title": "Ingeniero Senior",
+        "company": "UK DVLA (vía MadeTech)",
+        "mainTech": ["Python", "Azure"],
+        "technologies": ["Databricks", "SQL", "Airflow", "Docker", "Terraform"]
+      },
+      {
+        "years": "2020 — 2021",
+        "title": "Científico de Datos",
+        "company": "Santander (vía Kubrick)",
+        "mainTech": ["Python"],
+        "technologies": ["PySpark", "Pandas", "NumPy", "scikit-learn", "spaCy", "Plotly", "Hadoop", "Hue"]
+      },
+      {
+        "years": "2019 — 2020",
+        "title": "Ingeniero de Datos",
+        "company": "Deliveroo (vía Kubrick)",
+        "mainTech": ["Python"],
+        "technologies": ["SQL", "Docker", "AWS S3", "Snowflake"]
+      }
+    ]
+  },
+  "education": {
+    "heading": "Dónde he aprendido",
+    "items": [
+      {
+        "years": "2026 — presente",
+        "title": "Aprendizaje de Machine Learning",
+        "company": "[Founders and Coders](https://www.foundersandcoders.com/) · para ingenieros de software con experiencia",
+        "mainTech": [],
+        "technologies": ["Tiempo parcial", "1 año"]
+      },
+      {
+        "years": "2024",
+        "title": "Formación Avanzada en Deep Learning",
+        "company": "[Machine Learning Institute](https://ml.institute/)",
+        "mainTech": [],
+        "technologies": ["Tiempo completo", "4 meses"]
+      },
+      {
+        "years": "2015 — 2018",
+        "title": "B.Eng Ingeniería Aeroespacial",
+        "company": "The University of Manchester",
+        "mainTech": ["Primera clase con honores"],
+        "technologies": []
+      }
+    ]
+  },
+  "work": {
+    "heading": "Proyectos personales",
+    "hint": "toca una tarjeta para abrir la nota",
+    "status": {
+      "fetching": "consultando api.github.com…",
+      "live": "en vivo · api.github.com",
+      "failed": "datos en caché (api no disponible)"
     },
-    {
-      "company": "UK DVLA (a través de MadeTech)",
-      "title": "Ingeniero Senior",
-      "years": "03.2022 - 06.2023",
-      "mainTech": [
-        "Python",
-        "Azure"
-      ],
-      "technologies": [
-        "Databricks",
-        "SQL",
-        "Airflow",
-        "Docker",
-        "Terraform"
-      ]
+    "pushed": {
+      "today": "actualizado hoy",
+      "days": "hace {n}d",
+      "months": "hace {n}mes",
+      "years": "hace {n}a"
     },
-    {
-      "company": "Santander (a través de Kubrick)",
-      "title": "Científico de Datos",
-      "years": "08.2020 - 11.2021",
-      "mainTech": [
-        "Python"
-      ],
-      "technologies": [
-        "PySpark",
-        "Pandas",
-        "Numpy",
-        "Scikit-learn",
-        "Spacy",
-        "Plotly",
-        "Hadhoop",
-        "Hue"
-      ]
-    },
-    {
-      "company": "Deliveroo (a través de Kubrick)",
-      "title": "Ingeniero de Datos",
-      "years": "06.2019 - 06.2020",
-      "mainTech": [
-        "Python"
-      ],
-      "technologies": [
-        "SQL",
-        "Docker",
-        "AWS S3",
-        "Snowflake"
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "title": "Despliegue de modelo de subtitulado de imágenes",
-      "startDate": "2024",
-      "images": [
-        "images/portfolio/imgcapdep.png"
-      ],
-      "url": "https://github.com/kalebsofer/DeployImageCaptioning"
-    },
-    {
-      "title": "Motor de búsqueda con RNNs de dos torres",
-      "startDate": "2024",
-      "images": [
-        "images/portfolio/simplesearch.png"
-      ],
-      "url": "https://github.com/kalebsofer/DeploySearch"
-    },
-    {
-      "title": "Transcripción de audio con Whisper",
-      "startDate": "2024",
-      "images": [
-        "images/portfolio/audiostack.png"
-      ],
-      "url": "https://github.com/kalebsofer/AudioTransformer"
-    },
-    {
-      "title": "Página web de Softmax con TypeScript",
-      "startDate": "2024",
-      "images": [
-        "images/portfolio/softmax.png"
-      ],
-      "url": "https://github.com/kalebsofer/softmaxfront"
-    },
-    {
-      "title": "Pipelines sin Servidor con GCP",
-      "startDate": "2023",
-      "description": "",
-      "images": [
-        "images/portfolio/serverless.png"
-      ],
-      "url": "https://github.com/kalebsofer/serveless-pipelines-poc"
-    },
-    {
-      "title": "Una CNN Simple",
-      "startDate": "2024",
-      "description": "",
-      "images": [
-        "images/portfolio/simpleCNN.png"
-      ],
-      "url": "https://github.com/kalebsofer/simpleCNN"
-    },
-    {
-      "title": "GPT2 Desde Cero",
-      "startDate": "2024",
-      "description": "",
-      "images": [
-        "images/portfolio/gpt2.png"
-      ],
-      "url": "https://github.com/kalebsofer/reproducingGPT2"
-    },
-    {
-      "title": "Esta Página Web con React",
-      "startDate": "2024",
-      "description": "",
-      "images": [
-        "images/portfolio/webpage.png"
-      ],
-      "url": "https://github.com/kalebsofer/kalebsofer.github.io"
-    }
-  ]
+    "github_link": "GitHub ↗",
+    "projects": [
+      {
+        "title": "Transformer de subtitulado de imágenes, desplegado",
+        "year": "2024",
+        "stars": 12,
+        "primary": "PyTorch",
+        "image": "images/portfolio/imgcapdep.png",
+        "url": "https://github.com/kalebsofer/DeployImageCaptioning",
+        "repo": "DeployImageCaptioning",
+        "blurb": "Un captioner encoder–decoder entrenado desde cero, y empaquetado para poder llamarlo de verdad: inferencia en contenedores, peticiones por lotes, una API delgada delante. Lo interesante fue hacer aburrido el camino de serving.",
+        "techLine": "PyTorch · Docker · FastAPI · GCP"
+      },
+      {
+        "title": "Buscador con RNNs de dos torres",
+        "year": "2024",
+        "stars": 9,
+        "primary": "PyTorch",
+        "image": "images/portfolio/simplesearch.png",
+        "url": "https://github.com/kalebsofer/DeploySearch",
+        "repo": "DeploySearch",
+        "blurb": "Torres de consulta y documento entrenadas con encoders separados, embeddings cacheados para retrieval por vecinos aproximados. Construido para ver hasta dónde llega un modelo pequeño antes de necesitar una base vectorial.",
+        "techLine": "PyTorch · FAISS · Streamlit"
+      },
+      {
+        "title": "Transcripción de audio con Whisper",
+        "year": "2024",
+        "stars": 7,
+        "primary": "Whisper",
+        "image": "images/portfolio/audiostack.png",
+        "url": "https://github.com/kalebsofer/AudioTransformer",
+        "repo": "AudioTransformer",
+        "blurb": "Un pipeline de transcripción alrededor de Whisper: chunking, salida apta para diarización, y una cola para que los archivos largos no bloqueen la app.",
+        "techLine": "Whisper · Python · Docker"
+      },
+      {
+        "title": "Web de Softmax en TypeScript",
+        "year": "2024",
+        "stars": 5,
+        "primary": "TypeScript",
+        "image": "images/portfolio/softmax.png",
+        "url": "https://github.com/kalebsofer/softmaxfront",
+        "repo": "softmaxfront",
+        "blurb": "El front de la empresa — tipado, estático, deliberadamente rápido.",
+        "techLine": "TypeScript · React · Vite"
+      },
+      {
+        "title": "Pipelines serverless en GCP",
+        "year": "2023",
+        "stars": 6,
+        "primary": "GCP",
+        "image": "images/portfolio/serverless.png",
+        "url": "https://github.com/kalebsofer/serveless-pipelines-poc",
+        "repo": "serveless-pipelines-poc",
+        "blurb": "Una prueba de concepto de ingesta orientada a eventos con Cloud Functions y Pub/Sub, todo definido en Terraform para poder desmontarlo tan fácil como se levanta.",
+        "techLine": "GCP · Terraform · Python"
+      },
+      {
+        "title": "Una CNN sencilla",
+        "year": "2024",
+        "stars": 4,
+        "primary": "PyTorch",
+        "image": "images/portfolio/simpleCNN.png",
+        "url": "https://github.com/kalebsofer/simpleCNN",
+        "repo": "simpleCNN",
+        "blurb": "Convoluciones escritas a mano, por entender más que por precisión.",
+        "techLine": "PyTorch · NumPy"
+      },
+      {
+        "title": "GPT-2 desde cero",
+        "year": "2024",
+        "stars": 18,
+        "primary": "PyTorch",
+        "image": "images/portfolio/gpt2.png",
+        "url": "https://github.com/kalebsofer/reproducingGPT2",
+        "repo": "reproducingGPT2",
+        "blurb": "Reproducir GPT-2 de principio a fin — tokenizador, atención, bucle de entrenamiento, todo — para saber exactamente dónde va el cómputo.",
+        "techLine": "PyTorch · CUDA · Weights & Biases"
+      },
+      {
+        "title": "Esta web",
+        "year": "2024",
+        "stars": 3,
+        "primary": "React",
+        "image": "images/portfolio/webpage.png",
+        "url": "https://github.com/kalebsofer/kalebsofer.github.io",
+        "repo": "kalebsofer.github.io",
+        "blurb": "React estático en GitHub Pages, contenido en JSON para que cada actualización sea un commit.",
+        "techLine": "React · SCSS · GitHub Pages"
+      }
+    ]
+  },
+  "writing": {
+    "heading": "Escritura",
+    "url": "https://medium.com/@kalebsofer",
+    "posts": [
+      { "title": "Experimenting with push notifications", "meta": "Medium" }
+    ]
+  },
+  "footer": {
+    "cta_line1": "Ponte en contacto",
+    "cta_line2": "",
+    "email": "kaleb@softmaxco.io"
+  }
 }
