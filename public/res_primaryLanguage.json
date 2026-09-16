@@ -12,12 +12,8 @@
   },
   "hero": {
     "availability": "● Currently taking on clients",
-    "headline_line1": "Data",
-    "headline_line2": "Engineer",
-    "headline_line3": "founder",
-    "caption": "flow field · move your cursor"
-  },
-  "intro": {
+    "headline_line1": "Data & ML",
+    "headline_line2": "Founder",
     "lead_before": "Hi — I'm Kaleb. I build the systems that make data useful, and lately the models that sit on top of them. Six years across UK government, banking and Deliveroo. Most of my energy now goes into ",
     "lead_link": "Softmax",
     "lead_after": ".",
@@ -25,7 +21,7 @@
     "cta_primary_url": "https://www.softmaxco.io/#contact",
     "cta_secondary": "Say hello",
     "email": "kalebsofer+hello@gmail.com",
-    "photo_caption": "London · GMT · replies within a day (or tries to)"
+    "location_lines": ["London · GMT", "Tries to reply within a day"]
   },
   "marquee": "Python — Spark — PyTorch — Terraform — Kafka — Airflow — Kubernetes — GCP — AWS — ",
   "softmax": {

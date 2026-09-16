@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Nav({ nav, lang, onPickLang, theme, onToggleTheme }) {
+export default function Nav({ nav, lang, onPickLang }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const cvHref = `${process.env.PUBLIC_URL}/docs/KSoferCV.pdf`;
 
@@ -30,17 +30,6 @@ export default function Nav({ nav, lang, onPickLang, theme, onToggleTheme }) {
     </span>
   );
 
-  const themeButton = (
-    <button
-      type="button"
-      className="nav__theme"
-      onClick={onToggleTheme}
-      aria-label={theme === "light" ? "Switch to dark theme" : "Switch to light theme"}
-    >
-      {theme === "light" ? "☀" : "☾"}
-    </button>
-  );
-
   return (
     <nav className="nav">
       <span className="nav__logo">
@@ -50,7 +39,6 @@ export default function Nav({ nav, lang, onPickLang, theme, onToggleTheme }) {
       <div className="nav__links">
         {links}
         {langSwitch}
-        {themeButton}
         <a className="pill pill--invert" href={cvHref} download>
           {nav.cv}
         </a>
@@ -70,7 +58,6 @@ export default function Nav({ nav, lang, onPickLang, theme, onToggleTheme }) {
           {links}
           <div className="nav__sheet-row">
             {langSwitch}
-            {themeButton}
             <a className="pill pill--invert" href={cvHref} download onClick={() => setMenuOpen(false)}>
               {nav.cv}
             </a>
