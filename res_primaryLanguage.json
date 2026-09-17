@@ -11,13 +11,8 @@
     "close": "Close"
   },
   "hero": {
-    "availability": "● Currently taking on clients",
-    "headline_line1": "Data",
-    "headline_line2": "Engineer",
-    "headline_line3": "founder",
-    "caption": "flow field · move your cursor"
-  },
-  "intro": {
+    "headline_line1": "Data & ML",
+    "headline_line2": "Founder",
     "lead_before": "Hi — I'm Kaleb. I build the systems that make data useful, and lately the models that sit on top of them. Six years across UK government, banking and Deliveroo. Most of my energy now goes into ",
     "lead_link": "Softmax",
     "lead_after": ".",
@@ -25,9 +20,13 @@
     "cta_primary_url": "https://www.softmaxco.io/#contact",
     "cta_secondary": "Say hello",
     "email": "kalebsofer+hello@gmail.com",
-    "photo_caption": "London · GMT · replies within a day (or tries to)"
+    "email_subject": "Hello from kalebsofer.com",
+    "location_lines": ["London · GMT", "Tries to reply within a day"]
   },
-  "marquee": "Python — Spark — PyTorch — Terraform — Kafka — Airflow — Kubernetes — GCP — AWS — ",
+  "marquee": [
+    "Python — PyTorch — Spark — Kafka — Airflow — Kubernetes — Terraform — GCP — AWS — ",
+    "RAG — Embeddings — Ranking — Evaluation — Model serving — Drift monitoring — Agents — "
+  ],
   "softmax": {
     "eyebrow": "Currently building",
     "name": "Softmax",
@@ -60,52 +59,260 @@
     "heading": "How I work",
     "items": [
       { "number": "01", "title": "Discovery", "description": "Understand the problem before the tooling: who owns the data, what good looks like, and what's already been tried." },
-      { "number": "02", "title": "P.O.C", "description": "Start with the cheapest thing that could possibly answer the question, then earn every extra parameter." },
-      { "number": "03", "title": "Beta", "description": "Put it in front of real users early — measure, break it, and let the feedback set the roadmap." },
-      { "number": "04", "title": "Production", "description": "Clever belongs in the notebook. What ships should be legible at 4am by someone who didn't write it." },
+      { "number": "02", "title": "P.O.C", "description": "Start with the cheapest thing that answers the question and move quickly." },
+      { "number": "03", "title": "Beta", "description": "Get in front of real users early, measure, break it, and use the feedback to inform the roadmap." },
+      { "number": "04", "title": "Production", "description": "What ships should be legible at 4am by someone who didn't write it." },
       { "number": "05", "title": "Handoff", "description": "A system isn't done until the team that owns it next can change it without me in the room." }
     ]
   },
   "stack": {
-    "heading": "Familiar stacks",
+    "heading": "Technical stack",
+    "updated": "last updated - Sep 2026",
     "groups": [
-      { "name": "Data engineering", "line": "Python · Spark · SQL · Airflow · Kafka · Docker · Kubernetes" },
-      { "name": "Machine learning", "line": "PyTorch · TensorFlow · LangChain & LangGraph" },
-      { "name": "Cloud & infra", "line": "AWS · GCP · Azure · Terraform" },
-      { "name": "Visualisation", "line": "Plotly · matplotlib · Streamlit" },
-      { "name": "Delivery", "line": "Jira · Productboard · Trello · Notion · Miro" }
+      {
+        "name": "Languages & engineering",
+        "items": [
+          "Python",
+          "SQL",
+          "Bash",
+          "Linux",
+          "Git",
+          "Data structures & algorithms",
+          "Software design",
+          "Automated testing",
+          "Profiling & performance optimisation"
+        ]
+      },
+      {
+        "name": "ML frameworks & applied ML",
+        "items": [
+          "PyTorch",
+          "TensorFlow",
+          "scikit-learn",
+          "XGBoost",
+          "LightGBM",
+          "NumPy",
+          "pandas",
+          "Feature engineering",
+          "Supervised & unsupervised learning",
+          "Hyperparameter optimisation",
+          "Model calibration & uncertainty estimation"
+        ]
+      },
+      {
+        "name": "Product ML & architectures",
+        "items": [
+          "Ranking",
+          "Recommendation",
+          "Candidate retrieval",
+          "Learning to rank",
+          "Embeddings",
+          "Two-tower models",
+          "Approximate nearest-neighbour search",
+          "FAISS",
+          "Transformers",
+          "Attention",
+          "CNNs",
+          "RNNs",
+          "LSTMs",
+          "GRUs"
+        ]
+      },
+      {
+        "name": "Evaluation & experimentation",
+        "items": [
+          "Cross-validation",
+          "Leakage prevention",
+          "Error & cohort analysis",
+          "A/B testing",
+          "Statistical significance",
+          "Causal inference",
+          "PR-AUC",
+          "ROC-AUC",
+          "Log loss",
+          "NDCG",
+          "Recall@K",
+          "Matplotlib",
+          "Plotly",
+          "Power BI"
+        ]
+      },
+      {
+        "name": "Data, pipelines & orchestration",
+        "items": [
+          "Spark",
+          "Kafka",
+          "BigQuery",
+          "Parquet",
+          "Relational & NoSQL stores",
+          "Batch & streaming pipelines",
+          "Training datasets",
+          "Lineage",
+          "Schema validation",
+          "Great Expectations",
+          "Airflow",
+          "Prefect",
+          "Kubeflow",
+          "Automated retraining",
+          "Dataset & model versioning"
+        ]
+      },
+      {
+        "name": "Platform, training & serving",
+        "items": [
+          "GCP",
+          "AWS",
+          "Azure",
+          "Terraform",
+          "Docker",
+          "Kubernetes",
+          "GPU/TPU workloads",
+          "PyTorch DDP/FSDP",
+          "Mixed precision",
+          "Quantisation",
+          "Distillation",
+          "FastAPI",
+          "ONNX Runtime",
+          "gRPC",
+          "CI/CD",
+          "Model registries",
+          "Canary releases",
+          "MLflow",
+          "W&B",
+          "Prometheus",
+          "Grafana",
+          "Drift monitoring"
+        ]
+      }
     ]
   },
   "experience": {
     "heading": "Where I've worked",
     "jobs": [
       {
-        "years": "2023 — 2024",
+        "years": "2024 – present",
+        "title": "Founding Director",
+        "company": "[Softmax Ltd](https://softmaxco.io)",
+        "summary": "Lead client acquisition, technical discovery and delivery for a data and AI practice. Scope engagements, set technical direction and oversee development of client systems and in-house products.",
+        "mainTech": [],
+        "technologies": [
+          "AI strategy",
+          "Discovery",
+          "Delivery"
+        ]
+      },
+      {
+        "years": "2026",
+        "title": "Senior ML Engineer",
+        "company": "[Founders and Coders](https://www.foundersandcoders.com/) (via Softmax)",
+        "summary": "Built an organisation-wide RAG system letting clients, staff and learners query institutional knowledge. Designed and delivered applied ML and infrastructure modules for the Level 6 apprenticeship, running weekly workshops for 20–40 experienced engineers.",
+        "mainTech": [
+          "RAG",
+          "LangChain",
+          "Teaching"
+        ],
+        "technologies": [
+          "Ranking",
+          "Cross-validation",
+          "Next.js",
+          "Tailwind",
+          "FastAPI",
+          "pgvector"
+        ]
+      },
+      {
+        "years": "2025 – present",
+        "title": "Founder & Sole Engineer",
+        "company": "Traction",
+        "summary": "Designed, built and launched a productivity and wellness app on iOS and Android, taking it from concept to beta with a few hundred active testers to date.",
+        "mainTech": [
+          "React Native",
+          "iOS",
+          "Android"
+        ],
+        "technologies": [
+          "Expo",
+          "TypeScript",
+          "Jotai",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Firebase"
+        ]
+      },
+      {
+        "years": "2023 – 2024",
         "title": "Senior Data Engineer",
-        "company": "UK Ministry of Justice (via MadeTech)",
-        "mainTech": ["Python", "Spark", "AWS"],
-        "technologies": ["PySpark", "Airflow", "Kafka", "Docker", "Kubernetes", "Terraform"]
+        "company": "Ministry of Justice (via MadeTech)",
+        "summary": "Led the data engineering team through a large court-case migration, implementing an Apache Iceberg data lake on AWS, PySpark pipelines, live data linkage and services supporting front-end development.",
+        "mainTech": [
+          "Python",
+          "Spark",
+          "AWS"
+        ],
+        "technologies": [
+          "Apache Iceberg",
+          "PySpark",
+          "Airflow",
+          "Kafka",
+          "Docker",
+          "Kubernetes",
+          "Terraform"
+        ]
       },
       {
-        "years": "2022 — 2023",
+        "years": "2022 – 2023",
         "title": "Senior Engineer",
-        "company": "UK DVLA (via MadeTech)",
-        "mainTech": ["Python", "Azure"],
-        "technologies": ["Databricks", "SQL", "Airflow", "Docker", "Terraform"]
+        "company": "DVLA (via MadeTech)",
+        "summary": "Led a team building a Databricks analytics platform on Azure, provisioning infrastructure with Terraform and integrating data sources through PySpark pipelines to support reliable Power BI dashboards.",
+        "mainTech": [
+          "Python",
+          "Azure"
+        ],
+        "technologies": [
+          "Databricks",
+          "PySpark",
+          "SQL",
+          "Terraform",
+          "Power BI",
+          "Docker"
+        ]
       },
       {
-        "years": "2020 — 2021",
-        "title": "Data Scientist",
+        "years": "2020 – 2021",
+        "title": "Data Scientist, Financial Crime",
         "company": "Santander (via Kubrick)",
-        "mainTech": ["Python"],
-        "technologies": ["PySpark", "Pandas", "NumPy", "scikit-learn", "spaCy", "Plotly", "Hadoop", "Hue"]
+        "summary": "Developed and deployed an anti-money laundering tool using anomaly detection and NLP to accelerate investigations. Used daily by 400 analysts, saving £12m annually.",
+        "mainTech": [
+          "Python",
+          "PyTorch"
+        ],
+        "technologies": [
+          "PySpark",
+          "spaCy",
+          "Anomaly detection",
+          "NLP",
+          "pandas",
+          "NumPy",
+          "scikit-learn",
+          "Plotly",
+          "Hadoop"
+        ]
       },
       {
-        "years": "2019 — 2020",
-        "title": "Data Engineer",
+        "years": "2019 – 2020",
+        "title": "Data Engineer, Payments",
         "company": "Deliveroo (via Kubrick)",
-        "mainTech": ["Python"],
-        "technologies": ["SQL", "Docker", "AWS S3", "Snowflake"]
+        "summary": "Built a flexible restaurant payouts platform to support cash flow through COVID-19 lockdowns, with Docker deployment and pipelines on AWS and Snowflake.",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "SQL",
+          "Docker",
+          "AWS",
+          "Snowflake"
+        ]
       }
     ]
   },
