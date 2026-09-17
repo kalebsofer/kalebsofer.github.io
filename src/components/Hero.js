@@ -18,7 +18,6 @@ export default function Hero({ hero, softmaxUrl, nav }) {
       {nav}
 
       <div className="hero__body">
-        <p className="hero__availability">{hero.availability}</p>
         <h1 className="hero__headline">
           {hero.headline_line1}
           <span className="hero__comma">,</span>
@@ -49,7 +48,10 @@ export default function Hero({ hero, softmaxUrl, nav }) {
               >
                 {hero.cta_primary}
               </a>
-              <a className="pill pill--outline" href={`mailto:${hero.email}`}>
+              <a
+                className="pill pill--outline"
+                href={`mailto:${hero.email}?subject=${encodeURIComponent(hero.email_subject)}`}
+              >
                 {hero.cta_secondary}
               </a>
             </div>

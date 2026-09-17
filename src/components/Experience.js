@@ -19,6 +19,7 @@ export default function Experience({ experience }) {
             <div>
               <h3 className="experience__title">{job.title}</h3>
               <p className="experience__company">{withLinks(job.company)}</p>
+              {job.summary && <p className="experience__summary">{job.summary}</p>}
             </div>
             <div className="experience__pills">
               {(job.mainTech || []).map((tech) => (

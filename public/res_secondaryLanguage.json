@@ -11,7 +11,6 @@
     "close": "Cerrar"
   },
   "hero": {
-    "availability": "● Actualmente aceptando clientes",
     "headline_line1": "Datos y ML",
     "headline_line2": "Fundador",
     "lead_before": "Hola — soy Kaleb. Construyo los sistemas que hacen útiles los datos, y últimamente los modelos que se apoyan en ellos. Seis años entre el sector público británico, banca y Deliveroo. Ahora casi toda mi energía va a ",
@@ -21,9 +20,13 @@
     "cta_primary_url": "https://www.softmaxco.io/#contact",
     "cta_secondary": "Saluda",
     "email": "kalebsofer+hello@gmail.com",
+    "email_subject": "Hola desde kalebsofer.com",
     "location_lines": ["Londres · GMT", "Intenta responder en un día"]
   },
-  "marquee": "Python — Spark — PyTorch — Terraform — Kafka — Airflow — Kubernetes — GCP — AWS — ",
+  "marquee": [
+    "Python — PyTorch — Spark — Kafka — Airflow — Kubernetes — Terraform — GCP — AWS — ",
+    "RAG — Embeddings — Ranking — Evaluación — Model serving — Monitorización de drift — Agentes — "
+  ],
   "softmax": {
     "eyebrow": "Construyendo ahora",
     "name": "Softmax",
@@ -56,52 +59,260 @@
     "heading": "Cómo trabajo",
     "items": [
       { "number": "01", "title": "Descubrimiento", "description": "Entender el problema antes que las herramientas: quién es dueño de los datos, qué significa 'bien', y qué se ha intentado ya." },
-      { "number": "02", "title": "P.O.C", "description": "Empieza con lo más barato que pueda responder la pregunta, y gánate cada parámetro extra." },
-      { "number": "03", "title": "Beta", "description": "Ponlo delante de usuarios reales pronto — mide, rómpelo, y deja que el feedback marque el roadmap." },
-      { "number": "04", "title": "Producción", "description": "Lo ingenioso se queda en el notebook. Lo que se despliega debe poder leerse a las 4am por alguien que no lo escribió." },
+      { "number": "02", "title": "P.O.C", "description": "Empieza con lo más barato que responda la pregunta y avanza rápido." },
+      { "number": "03", "title": "Beta", "description": "Llega pronto a usuarios reales, mide, rómpelo, y usa el feedback para orientar el roadmap." },
+      { "number": "04", "title": "Producción", "description": "Lo que se despliega debe poder leerse a las 4am por alguien que no lo escribió." },
       { "number": "05", "title": "Entrega", "description": "Un sistema no está terminado hasta que el equipo que lo hereda puede cambiarlo sin mí en la sala." }
     ]
   },
   "stack": {
-    "heading": "Stacks conocidos",
+    "heading": "Stack técnico",
+    "updated": "actualizado - sep 2026",
     "groups": [
-      { "name": "Ingeniería de datos", "line": "Python · Spark · SQL · Airflow · Kafka · Docker · Kubernetes" },
-      { "name": "Machine learning", "line": "PyTorch · TensorFlow · LangChain & LangGraph" },
-      { "name": "Cloud e infra", "line": "AWS · GCP · Azure · Terraform" },
-      { "name": "Visualización", "line": "Plotly · matplotlib · Streamlit" },
-      { "name": "Delivery", "line": "Jira · Productboard · Trello · Notion · Miro" }
+      {
+        "name": "Lenguajes e ingeniería",
+        "items": [
+          "Python",
+          "SQL",
+          "Bash",
+          "Linux",
+          "Git",
+          "Estructuras de datos y algoritmos",
+          "Diseño de software",
+          "Pruebas automatizadas",
+          "Profiling y optimización de rendimiento"
+        ]
+      },
+      {
+        "name": "Frameworks de ML y ML aplicado",
+        "items": [
+          "PyTorch",
+          "TensorFlow",
+          "scikit-learn",
+          "XGBoost",
+          "LightGBM",
+          "NumPy",
+          "pandas",
+          "Feature engineering",
+          "Aprendizaje supervisado y no supervisado",
+          "Optimización de hiperparámetros",
+          "Calibración de modelos y estimación de incertidumbre"
+        ]
+      },
+      {
+        "name": "ML de producto y arquitecturas",
+        "items": [
+          "Ranking",
+          "Recomendación",
+          "Recuperación de candidatos",
+          "Learning to rank",
+          "Embeddings",
+          "Modelos two-tower",
+          "Búsqueda aproximada de vecinos",
+          "FAISS",
+          "Transformers",
+          "Atención",
+          "CNNs",
+          "RNNs",
+          "LSTMs",
+          "GRUs"
+        ]
+      },
+      {
+        "name": "Evaluación y experimentación",
+        "items": [
+          "Validación cruzada",
+          "Prevención de fugas de datos",
+          "Análisis de errores y cohortes",
+          "Pruebas A/B",
+          "Significancia estadística",
+          "Inferencia causal",
+          "PR-AUC",
+          "ROC-AUC",
+          "Log loss",
+          "NDCG",
+          "Recall@K",
+          "Matplotlib",
+          "Plotly",
+          "Power BI"
+        ]
+      },
+      {
+        "name": "Datos, pipelines y orquestación",
+        "items": [
+          "Spark",
+          "Kafka",
+          "BigQuery",
+          "Parquet",
+          "Bases relacionales y NoSQL",
+          "Pipelines batch y streaming",
+          "Datasets de entrenamiento",
+          "Linaje",
+          "Validación de esquemas",
+          "Great Expectations",
+          "Airflow",
+          "Prefect",
+          "Kubeflow",
+          "Reentrenamiento automático",
+          "Versionado de datasets y modelos"
+        ]
+      },
+      {
+        "name": "Plataforma, entrenamiento y serving",
+        "items": [
+          "GCP",
+          "AWS",
+          "Azure",
+          "Terraform",
+          "Docker",
+          "Kubernetes",
+          "Cargas GPU/TPU",
+          "PyTorch DDP/FSDP",
+          "Precisión mixta",
+          "Cuantización",
+          "Destilación",
+          "FastAPI",
+          "ONNX Runtime",
+          "gRPC",
+          "CI/CD",
+          "Registros de modelos",
+          "Despliegues canary",
+          "MLflow",
+          "W&B",
+          "Prometheus",
+          "Grafana",
+          "Monitorización de drift"
+        ]
+      }
     ]
   },
   "experience": {
     "heading": "Dónde he trabajado",
     "jobs": [
       {
-        "years": "2023 — 2024",
+        "years": "2024 – presente",
+        "title": "Director Fundador",
+        "company": "[Softmax Ltd](https://softmaxco.io)",
+        "summary": "Lidero la captación de clientes, el descubrimiento técnico y la entrega en una consultora de datos e IA. Defino el alcance de los proyectos, marco la dirección técnica y superviso el desarrollo de sistemas para clientes y productos propios.",
+        "mainTech": [],
+        "technologies": [
+          "Estrategia de IA",
+          "Descubrimiento",
+          "Entrega"
+        ]
+      },
+      {
+        "years": "2026",
+        "title": "Ingeniero de ML Senior",
+        "company": "[Founders and Coders](https://www.foundersandcoders.com/) (vía Softmax)",
+        "summary": "Construí un sistema RAG para toda la organización que permite a clientes, personal y alumnos consultar el conocimiento institucional. Diseñé e impartí módulos de ML aplicado e infraestructura para el aprendizaje de Nivel 6, con talleres semanales para 20–40 ingenieros con experiencia.",
+        "mainTech": [
+          "RAG",
+          "LangChain",
+          "Docencia"
+        ],
+        "technologies": [
+          "Ranking",
+          "Validación cruzada",
+          "Next.js",
+          "Tailwind",
+          "FastAPI",
+          "pgvector"
+        ]
+      },
+      {
+        "years": "2025 – presente",
+        "title": "Fundador e Ingeniero Único",
+        "company": "Traction",
+        "summary": "Diseñé, construí y lancé una app de productividad y bienestar en iOS y Android, llevándola desde el concepto hasta una beta con varios cientos de testers activos.",
+        "mainTech": [
+          "React Native",
+          "iOS",
+          "Android"
+        ],
+        "technologies": [
+          "Expo",
+          "TypeScript",
+          "Jotai",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Firebase"
+        ]
+      },
+      {
+        "years": "2023 – 2024",
         "title": "Ingeniero de Datos Senior",
-        "company": "UK Ministry of Justice (vía MadeTech)",
-        "mainTech": ["Python", "Spark", "AWS"],
-        "technologies": ["PySpark", "Airflow", "Kafka", "Docker", "Kubernetes", "Terraform"]
+        "company": "Ministry of Justice (vía MadeTech)",
+        "summary": "Lideré el equipo de ingeniería de datos en una gran migración de casos judiciales, implementando un data lake con Apache Iceberg en AWS, pipelines en PySpark, enlace de datos en tiempo real y servicios de apoyo al desarrollo front-end.",
+        "mainTech": [
+          "Python",
+          "Spark",
+          "AWS"
+        ],
+        "technologies": [
+          "Apache Iceberg",
+          "PySpark",
+          "Airflow",
+          "Kafka",
+          "Docker",
+          "Kubernetes",
+          "Terraform"
+        ]
       },
       {
-        "years": "2022 — 2023",
+        "years": "2022 – 2023",
         "title": "Ingeniero Senior",
-        "company": "UK DVLA (vía MadeTech)",
-        "mainTech": ["Python", "Azure"],
-        "technologies": ["Databricks", "SQL", "Airflow", "Docker", "Terraform"]
+        "company": "DVLA (vía MadeTech)",
+        "summary": "Lideré un equipo construyendo una plataforma analítica con Databricks en Azure, aprovisionando la infraestructura con Terraform e integrando fuentes de datos mediante pipelines en PySpark para dashboards fiables en Power BI.",
+        "mainTech": [
+          "Python",
+          "Azure"
+        ],
+        "technologies": [
+          "Databricks",
+          "PySpark",
+          "SQL",
+          "Terraform",
+          "Power BI",
+          "Docker"
+        ]
       },
       {
-        "years": "2020 — 2021",
-        "title": "Científico de Datos",
+        "years": "2020 – 2021",
+        "title": "Científico de Datos, Delitos Financieros",
         "company": "Santander (vía Kubrick)",
-        "mainTech": ["Python"],
-        "technologies": ["PySpark", "Pandas", "NumPy", "scikit-learn", "spaCy", "Plotly", "Hadoop", "Hue"]
+        "summary": "Desarrollé y desplegué una herramienta contra el blanqueo de capitales con detección de anomalías y NLP para acelerar investigaciones. Usada a diario por 400 analistas, con un ahorro de 12 M£ anuales.",
+        "mainTech": [
+          "Python",
+          "PyTorch"
+        ],
+        "technologies": [
+          "PySpark",
+          "spaCy",
+          "Detección de anomalías",
+          "NLP",
+          "pandas",
+          "NumPy",
+          "scikit-learn",
+          "Plotly",
+          "Hadoop"
+        ]
       },
       {
-        "years": "2019 — 2020",
-        "title": "Ingeniero de Datos",
+        "years": "2019 – 2020",
+        "title": "Ingeniero de Datos, Pagos",
         "company": "Deliveroo (vía Kubrick)",
-        "mainTech": ["Python"],
-        "technologies": ["SQL", "Docker", "AWS S3", "Snowflake"]
+        "summary": "Construí una plataforma flexible de pagos a restaurantes para sostener su liquidez durante los confinamientos por COVID-19, con despliegue en Docker y pipelines en AWS y Snowflake.",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "SQL",
+          "Docker",
+          "AWS",
+          "Snowflake"
+        ]
       }
     ]
   },

@@ -39,7 +39,6 @@ export default function App() {
   if (!content) return null;
 
   const social = shared && shared.basic_info ? shared.basic_info.social : [];
-  const icons = shared && shared.skills ? shared.skills.icons : [];
 
   return (
     <div className="site">
@@ -54,10 +53,10 @@ export default function App() {
           />
         }
       />
-      <Marquee text={content.marquee} />
+      <Marquee rows={content.marquee} />
       <SoftmaxNow softmax={content.softmax} now={content.now} />
       <Principles principles={content.principles} />
-      <Stack stack={content.stack} icons={icons} />
+      <Stack stack={content.stack} />
       <Experience experience={content.experience} />
       {content.education && <Experience experience={content.education} />}
       <Work work={content.work} gh={gh} />
